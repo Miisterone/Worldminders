@@ -1,0 +1,21 @@
+#body, #main{
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+#imageGame {
+    height: 35%;
+    width: 100%;
+}
+
+#news{
+    text-align: center;
+    font-size: 30px;
+}
+
+#caroulix{
+    height: 80%;
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 10px;
+}
