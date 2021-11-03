@@ -1,0 +1,12 @@
+#top-histoire{
+    background : url("../img/background-top.jpg") #fff no-repeat center center fixed;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+#top-histoire h1 {
+    margin : 0;
+    padding-top: 40vh;
+}
+
