@@ -1,13 +1,20 @@
 #monsters-caroulix{
-    margin-left: 5%;
-    width: 50%;
-}
-
-#monsters-image{
-    max-width: 25%;
-    height: auto;
+    margin-left:15%;
+    width: 60%;
 }
 
 #monsters-description{
-    
+    margin-right: 20%;
 }
+
+#grille{
+
+}
+main
+{
+    background-image: url(https://www.monsterhunter.com/stories2/assets/images/common/bg_game.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
