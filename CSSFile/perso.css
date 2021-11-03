@@ -1,8 +1,33 @@
-.Line_Below {
-    margin: 0 auto;
-    padding-bottom: 30px;
-    height: 35px;
-    width: 320px;
+#Line_Below {
+    position: relative;
+    margin:175px auto 0;
+    width: 410px;
+    height: 32px;
     background-color: blue;
+}
+
+#Ptitle {
+    position: relative;
+    margin:-150px auto 0;
+    width: 410px;
+    height: 32px;
+    background-color: orange;
+}
+
+#FirstImage {
+    position: relative;
+    margin:270px auto 0;
+    left:230px;
+    width: 420px;
+    height: 260px;
+    background-color: green;
+}
+
+#content {
+    padding-bottom: 76px;
+}
+
+#main {
+    display: inline-block;
 }
 
