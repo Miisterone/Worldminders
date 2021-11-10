@@ -11,8 +11,8 @@
 }
 
 #monsters-caroulix{
-    margin-left:15%;
-    width: 60%;
+    width: 65%;
+    min-width: 150px;
 }
 
 #monsters-description{
@@ -20,7 +20,8 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 5px;
-    padding-bottom: 5xpx;
+    padding-bottom: 5px;
+    
     background-image: url(https://www.monsterhunter.com/stories2/assets/images/common/bg_game_caption.jpg);
 }
 
@@ -36,3 +37,13 @@ main
     background-size: cover;
 }
 
+.container-txt{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-check{
+    padding: 5px;
+}
