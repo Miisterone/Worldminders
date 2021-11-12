@@ -1,3 +1,7 @@
+main{
+    background-color : #d6cca9;
+}
+
 #top-histoire{
     background : url("../img/background-top.jpg") #fff no-repeat center center fixed;
     text-align: center;
@@ -10,9 +14,44 @@
     padding-top: 40vh;
 }
 
+.image-top-histoire {
+    margin: 40px;
+}
+
 .barre{
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: black;
 }
+
+.history-block{
+    text-align: center;
+    font-weight: 700;
+}
+
+.flex-history{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
+}
+
+.img-flex-history {
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.text-flex-history {
+    padding: 1%;
+    text-align: center;
+    width: max-content;
+    margin : auto;
+}
+
+
 
