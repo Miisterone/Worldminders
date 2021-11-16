@@ -1,0 +1,36 @@
+#MainBar {
+    position: relative;
+    margin:55px auto 0;
+    width: 410px;
+    height: 32px;
+    left: 350px;
+}
+
+#MainText {
+    position: relative;
+    margin:-570px auto 0;
+    width: 410px;
+    height: 32px;
+    font-size: 65px;
+    font-family: 'Shippori Antique', sans-serif;
+    color: #FFA714;
+    left: 350px;
+}
+
+#main {
+    display: inline-block;
+}
+
+#BlockLine {
+    margin-top: 436px;
+}
+
+#FontP {
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+}
+
+#test {
+    margin-top: 1000px;
+}
