@@ -1,49 +1,48 @@
-#title{
+#title {
     text-align: center;
 }
 
-#title-deco{
+#title-deco {
     display: block;
     margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 20%;
 }
 
-#monsters-caroulix{
-    width: 65%;
-    min-width: 150px;
+#monsters-caroulix {
+    width: 100%;
+    margin: auto;
+    min-height: 500px;
 }
 
-#monsters-description{
-    margin-right: 20%;
+#monsters-description {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
-    
     background-image: url(https://www.monsterhunter.com/stories2/assets/images/common/bg_game_caption.jpg);
 }
 
-#grix{
+#grix {
     margin-top: 50px;
 }
 
-main
-{
+main {
     background-image: url(https://www.monsterhunter.com/stories2/assets/images/common/bg_game.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.container-txt{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
+.form-check {
+    padding: 6px;
 }
 
-.form-check{
-    padding: 5px;
+.card-content {
+    margin-top: -25px;
 }
