@@ -1,0 +1,140 @@
+main{
+    background-color : #d6cca9;
+}
+
+#top-histoire{
+    background : url("../images/background-top.jpg") #fff no-repeat bottom center fixed;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+#top-histoire h1 {
+    margin : 0;
+    padding-top: 40vh;
+}
+
+.image-top-histoire {
+    margin: 40px;
+}
+
+.barre{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+}
+
+.history-block{
+    text-align: center;
+    font-weight: 700;
+}
+
+.flex-history{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
+}
+
+.img-flex-history {
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.text-flex-history {
+    padding: 1%;
+    text-align: center;
+    width: max-content;
+    margin : auto;
+}
+
+
+@media only screen and (min-width : 768px) and (max-width: 1080px) { /*tablette*/
+    /* Styles pour cette Media Queries */
+    .img-flex-history {
+        width: 50%;
+    }
+
+    .text-flex-history {
+        width: 50%;
+    }
+
+    .img-flex-history .img-history{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width : 768px) and (max-width: 1080px) and (orientation: landscape){ /*tablette*/
+    /* Styles pour cette Media Queries */
+    .image-top-histoire img{
+        width: 80%;
+    }
+    .img-flex-history {
+        width: 50%;
+    }
+
+    .text-flex-history {
+        width: 50%;
+    }
+
+    .img-flex-history .img-history{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width: 1080px) and (orientation: portrait){ /*tablette*/
+    /* Styles pour cette Media Queries */
+    .image-top-histoire img{
+        width: 80%;
+    }
+    .flex-history{
+        flex-direction: column;
+    }
+
+    .text-flex-history {
+        width: 90%;
+    }
+
+    .img-flex-history {
+        width: 80%;
+        margin : auto;
+    }
+
+    .img-flex-history .img-history{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { /*telephone*/
+    /* Styles pour cette Media Queries */
+    .image-top-histoire img{
+        width: 90%;
+    }
+
+    #top-histoire{
+        height: 90vh;
+    }
+    .flex-history{
+        flex-direction: column;
+    }
+
+    .text-flex-history {
+        width: 90%;
+    }
+
+    .img-flex-history {
+        width: 80%;
+        margin : auto;
+    }
+
+    .img-flex-history .img-history{
+        width: 100%;
+    }
+}
