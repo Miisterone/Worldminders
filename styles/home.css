@@ -1,0 +1,44 @@
+#main{
+    background-image: url("../images/bg_news.jpg");
+}
+
+.delimiter{
+    position: relative;
+    background-color: darkgrey;
+    width: auto;
+    height: 1%;
+}
+
+#monster{
+    position: relative;
+    margin: 40px auto;
+    object-fit: cover;
+    width: 800px !important;
+    height: 800px !important;
+}
+
+#footer{
+    position: relative;
+    z-index: 1;
+}
+
+.downloadTxt{
+    position: relative;
+    padding-left: 48%;
+    padding-bottom: 30px;
+}
+
+#history{
+    position: relative;
+    display: flex;
+    padding: 5%;
+}
+
+.logo{
+    width: 35%;
+    margin-right: auto;
+}
+
+.text{
+    color: white;
+}
