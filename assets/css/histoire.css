@@ -3,7 +3,7 @@ main{
 }
 
 #top-histoire{
-    background : url("../img/background-top.jpg") #fff no-repeat center center fixed;
+    background : url("../img/background-top.jpg") #fff no-repeat bottom center fixed;
     text-align: center;
     height: 100vh;
     background-size: cover;
