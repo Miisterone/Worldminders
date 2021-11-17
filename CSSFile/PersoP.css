@@ -3,7 +3,6 @@
     margin:55px auto 0;
     width: 410px;
     height: 32px;
-    left: 350px;
 }
 
 #MainText {
@@ -14,7 +13,6 @@
     font-size: 65px;
     font-family: 'Shippori Antique', sans-serif;
     color: #FFA714;
-    left: 350px;
 }
 
 #main {
@@ -23,6 +21,7 @@
 
 #BlockLine {
     margin-top: 436px;
+    height: 20px;
 }
 
 #FontP {
@@ -31,6 +30,11 @@
     width: 100%;
 }
 
-#test {
-    margin-top: 1000px;
+#FontP2 {
+    background-size: cover;
+    width: 100%;
+}
+
+#head {
+    display: inline-block;
 }
