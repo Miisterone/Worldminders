@@ -10,10 +10,15 @@
     width: 20%;
 }
 
-#monsters-caroulix {
-    width: 100%;
-    margin: auto;
-    min-height: 500px;
+main {
+    background-image: url(https://www.monsterhunter.com/stories2/assets/images/common/bg_game.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.grille{
+    margin: 5%;
 }
 
 #monsters-description {
@@ -28,15 +33,19 @@
     background-image: url(https://www.monsterhunter.com/stories2/assets/images/common/bg_game_caption.jpg);
 }
 
-#grix {
-    margin-top: 50px;
+#monsters-img{
+    flex-basis: 100%;
+}
+#monsters-img img{
+    max-width: 100%;
+    min-width: 200px;
 }
 
-main {
-    background-image: url(https://www.monsterhunter.com/stories2/assets/images/common/bg_game.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.monsters-block {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .form-check {

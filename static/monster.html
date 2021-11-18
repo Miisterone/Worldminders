@@ -13,13 +13,14 @@
     <header>
         <div class="navbar-fixed">
             <nav class="navbar shadow-1 primary">
-                <button class="btn rounded-1 hide-md-up sidenav-trigger small mr-2 primary shadow-1" data-target="responsive-sidenav">
+                <button class="btn rounded-1 hide-md-up sidenav-trigger small mr-2 primary shadow-1"
+                    data-target="responsive-sidenav">
                     <img src="../images/Menu_icon.jpeg" alt="" style="max-width: 25px">
                 </button>
                 <a href="home.html" class="navbar-logo hide-sm-down primary">
                     <img src="../images/Animonster_logo1.0.png" alt="Xelzs" />
                 </a>
-                <a href="home.html" class="navbar-logo hide-lg-up primary centered">
+                <a href="home.html" class="navbar-logo hide-md-up primary centered">
                     <img src="../images/Animonster_logo1.0.png" alt="Xelzs" />
                 </a>
 
@@ -30,7 +31,7 @@
                     <a class="navbar-link hide-sm-down" href="#">Caractéristiques</a>
                     <a class="navbar-link hide-sm-down" href="#">Zones</a>
                 </div>
-                <div class="dropdown ml-auto hide-lg-up search" data-ax="dropdown">
+                <div class="dropdown ml-auto hide-md-up search" data-ax="dropdown">
                     <button type="button" class="btn shadow-1 rounded-1 primary dropdown-trigger">
                         Rechercher
                     </button>
@@ -89,54 +90,13 @@
             <div class="sidenav-header">
                 <button data-target="responsive-sidenav" class="sidenav-trigger"><i class="fas fa-times"></i></button>
             </div>
-            <div class="white rounded-1">
-                <div class="card shadow-1 rounded-2 bd-blue bd-dotted bd-3 search" style="margin: 10px;">
-                    <div class="card-header txt-left">Element</div>
-                    <div class="form-field card-content" id="card-content">
-                        <label class="form-check">
-                        <input type="checkbox">
-                        <span>Neutre</span>
-                    </label><label class="form-check">
-                        <input type="checkbox">
-                        <span>Ardent</span>
-                    </label>
-                        <label class="form-check">
-                        <input type="checkbox">
-                        <span>Electrique</span>
-                    </label>
-                        <label class="form-check">
-                        <input type="checkbox">
-                        <span>Aquatique</span>
-                    </label>
-                        <label class="form-check">
-                        <input type="checkbox">
-                        <span>Végétal</span>
-                    </label>
-                        <label class="form-check">
-                        <input type="checkbox">
-                        <span>Minéral</span>
-                    </label>
-                        <label class="form-check">
-                        <input type="checkbox">
-                        <span>Céleste</span>
-                    </label>
-                        <label class="form-check">
-                        <input type="checkbox">
-                        <span>Psychique</span>
-                    </label>
-                        <label class="form-check">
-                        <input type="checkbox">
-                        <span>Chaotique</span>
-                    </label>
-                        <label class="form-check">
-                        <input type="checkbox">
-                        <span>Toxique</span>
-                    </label>
-                        <label class="form-check">
-                        <input type="checkbox">
-                        <span>Ethéré</span>
-                    </label>
-                    </div>
+            <a href="#" class="collapsible-trigger sidenav-link" data-target="example-collapsible">Collapsible</a>
+            <div>
+                <div class="collapsible" id="example-collapsible" data-ax="collapsible">
+                    <a href="#" class="active sidenav-link">Sublink 1</a>
+                    <a href="#" class="sidenav-link">Sublink 2</a>
+                    <a href="#" class="sidenav-link">Sublink 3</a>
+                    <a href="#" class="sidenav-link">Sublink 4</a>
                 </div>
             </div>
         </div>
@@ -158,23 +118,16 @@
         <div id="title">
             <h1 class="txt-mole txt-dark-2 textshadow-2">Monstres</h1>
         </div>
-        <div style="justify-content: center;">
-            <img id="title-deco" src="https://www.monsterhunter.com/stories2/assets/../images/common/deco_element.png" alt="">
-        </div>
-        <div id="grix" class="grix xs1 sm1 md2 lg5">
-            <div class="vself-center col-lg3 " id="monsters-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis mauris eros, eu volutpat arcu vehicula sed. Duis quis nunc porta, laoreet leo quis, consectetur velit. Aliquam mattis convallis mauris sit amet egestas. .</p>
+        <div class="monsters-block">
+            <div class="" id="monsters-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat consequat libero euismod tempus.
+                    Quisque dictum, metus aliquam posuere semper, nibh felis interdum sem, in dapibus odio enim ut
+                    metus. Nulla sollicitudin nulla sit amet vehicula sodales. Fusce non venenatis mi. Interdum et
+                    malesuada fames ac ante ipsum primis in faucibus. Donec eu laoreet metus. Pellentesque vestibulum
+                    nunc tellus, a viverra urna efficitur eget. Mauris porta sagittis purus eu maximus.</p>
             </div>
-            <div class="caroulix pos-row-md1 pos-row-sm1 pos-row-xs1 pos-row-lg1" id="monsters-caroulix" data-ax="caroulix" data-caroulix-indicators-enabled="true" data-caroulix-indicators-is-flat="true">
-                <div class="caroulix-item">
-                    <img src="../images/Animonster_logo1.0.png" alt="img1" style="height: 80%"/>
-                </div>
-                <div class="caroulix-item">
-                    <img src="../images/Animonster_logo1.0.png" alt="img2" />
-                </div>
-                <div class="caroulix-item">
-                    <img src="../images/Animonster_logo1.0.png" alt="img3" />
-                </div>
+            <div class="" id="monsters-img">
+                <img class="" src="../images/Animonster_logo1.0.png" style="max-height: 400px;" alt="" />
             </div>
         </div>
     </main>
