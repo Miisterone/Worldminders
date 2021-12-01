@@ -1,5 +1,5 @@
 #main{
-    background-image: url("../images/bg_news.jpg");
+    background-image: url("http://localhost:8081/images/?key=bg_news.jpg");
 }
 
 .delimiter{
