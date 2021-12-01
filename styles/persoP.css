@@ -1,40 +1,81 @@
 #MainBar {
     position: relative;
-    margin:55px auto 0;
-    width: 410px;
-    height: 32px;
+    margin: 2.5em auto 0;
+    height: auto;
+    width: 37vw;
 }
 
 #MainText {
     position: relative;
-    margin:-570px auto 0;
-    width: 410px;
-    height: 32px;
-    font-size: 65px;
+    margin: -570px auto 0;
+    height: 5vh;
+    font-size: 5vw;
     font-family: 'Shippori Antique', sans-serif;
     color: #FFA714;
 }
 
 #main {
     display: inline-block;
+    background: url("../images/FontP2.jpg") #fff no-repeat bottom center fixed;
+    background-size: cover;
 }
 
 #BlockLine {
-    margin-top: 436px;
     height: 20px;
+    width: 100%;
 }
 
 #FontP {
     background-size: cover;
     height: 650px;
     width: 100%;
-}
 
-#FontP2 {
-    background-size: cover;
-    width: 100%;
 }
 
 #head {
     display: inline-block;
 }
+
+.ContentUP {
+    height: 650px;
+    text-align: center;
+}
+
+.ContentLine {
+    height: 20px;
+}
+
+.ContentDown {
+    height: 644px;
+}
+
+.AllP {
+    margin-top: 40vh;
+    margin-left: 9%;
+    margin-right: 9%;
+    height: auto;
+}
+
+#ImgT {
+    width: 15vw;
+    height: 27vh;
+}
+
+#test {
+    width: 15vw;
+    height: 28vh;
+}
+
+#Chef {
+    background-color: purple;
+    position: absolute;
+    width: 15vw;
+    margin-top: 25vh;
+}
+
+#test:hover {
+    transform: scale(1.5, 1.5);
+}
+
+
+
