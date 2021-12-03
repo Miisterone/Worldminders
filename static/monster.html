@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.3.3/dist/css/axentix.min.css" />
     <link rel="stylesheet" href="../styles/monsters.css">
+    <script src="../js/main.js"></script>
 </head>
 
 <body class="layout with-sidenav fixed-sidenav under-navbar">
@@ -89,16 +90,60 @@
             <div class="sidenav-header">
                 <button data-target="responsive-sidenav" class="sidenav-trigger"><i class="fas fa-times"></i></button>
             </div>
-            <a href="#" class="collapsible-trigger sidenav-link" data-target="example-collapsible">Collapsible</a>
+            <a href="#" class="collapsible-trigger sidenav-link" data-target="collapsible">Collapsible</a>
             <div>
-                <div class="collapsible" id="example-collapsible" data-ax="collapsible">
-                    <a href="#" class="active sidenav-link">Sublink 1</a>
-                    <a href="#" class="sidenav-link">Sublink 2</a>
-                    <a href="#" class="sidenav-link">Sublink 3</a>
-                    <a href="#" class="sidenav-link">Sublink 4</a>
+                <div class="collapsible" id="collapsible" data-ax="collapsible">
+                    <div class="form-field">
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Neutre">
+                            <span>Neutre</span>
+                        </label>
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Ardent">
+                            <span>Ardent</span>
+                        </label>
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Electrique">
+                            <span>Electrique</span>
+                        </label>
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Aquatique">
+                            <span>Aquatique</span>
+                        </label>
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Végétal">
+                            <span>Végétal</span>
+                        </label>
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Minéral">
+                            <span>Minéral</span>
+                        </label>
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Céleste">
+                            <span>Céleste</span>
+                        </label>
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Psychique">
+                            <span>Psychique</span>
+                        </label>
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Chaotique">
+                            <span>Chaotique</span>
+                        </label>
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Toxique">
+                            <span>Toxique</span>
+                        </label>
+                        <label class="form-check">
+                            <input id="check" type="checkbox" id="Ethéré">
+                            <span>Ethéré</span>
+                        </label>
+                    </div>
                 </div>
+                <button onclick="getType()" class="btn rounded-1 press primary collapsible-trigger mx-auto">
+                    Trier
+                </button>
             </div>
-        </div>
     </header>
 
     <div class="sidenav white shadow-1" id="responsive-sidenav" data-ax="sidenav">
