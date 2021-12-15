@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.3.3/dist/css/axentix.min.css" />
     <link rel="stylesheet" href="../styles/monsters.css">
-    <script src="../js/main.js"></script>
+
 </head>
 
 <body class="layout with-sidenav fixed-sidenav under-navbar">
@@ -31,58 +31,6 @@
                     <a class="navbar-link hide-sm-down" href="#">Caractéristiques</a>
                     <a class="navbar-link hide-sm-down" href="#">Zones</a>
                 </div>
-                <div class="dropdown ml-auto hide-md-up " id="search" data-ax="dropdown">
-                    <button type="button" class="btn shadow-1 rounded-1 primary dropdown-trigger">
-                        Rechercher
-                    </button>
-                    <div class="dropdown-content white right-aligned shadow-1 rounded-1">
-                        <div class="form-field">
-                            <label class="form-check">
-                                <input type="checkbox">
-                                <span>Neutre</span>
-                            </label><label class="form-check">
-                                <input type="checkbox">
-                                <span>Ardent</span>
-                            </label>
-                            <label class="form-check">
-                                <input type="checkbox">
-                                <span>Electrique</span>
-                            </label>
-                            <label class="form-check">
-                                <input type="checkbox">
-                                <span>Aquatique</span>
-                            </label>
-                            <label class="form-check">
-                                <input type="checkbox">
-                                <span>Végétal</span>
-                            </label>
-                            <label class="form-check">
-                                <input type="checkbox">
-                                <span>Minéral</span>
-                            </label>
-                            <label class="form-check">
-                                <input type="checkbox">
-                                <span>Céleste</span>
-                            </label>
-                            <label class="form-check">
-                                <input type="checkbox">
-                                <span>Psychique</span>
-                            </label>
-                            <label class="form-check">
-                                <input type="checkbox">
-                                <span>Chaotique</span>
-                            </label>
-                            <label class="form-check">
-                                <input type="checkbox">
-                                <span>Toxique</span>
-                            </label>
-                            <label class="form-check">
-                                <input type="checkbox">
-                                <span>Ethéré</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
             </nav>
         </div>
 
@@ -95,52 +43,52 @@
                 <div class="collapsible" id="collapsible" data-ax="collapsible">
                     <div class="form-field">
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Neutre">
+                            <input id="check" type="checkbox" id="Neutre" value="Neutre">
                             <span>Neutre</span>
                         </label>
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Ardent">
+                            <input id="check" type="checkbox" id="Ardent" value="Ardent">
                             <span>Ardent</span>
                         </label>
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Electrique">
+                            <input id="check" type="checkbox" id="Electrique" value="Electrique">
                             <span>Electrique</span>
                         </label>
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Aquatique">
+                            <input id="check" type="checkbox" id="Aquatique" value="Aquatique">
                             <span>Aquatique</span>
                         </label>
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Végétal">
+                            <input id="check" type="checkbox" id="Végétal" value="Vegetal">
                             <span>Végétal</span>
                         </label>
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Minéral">
+                            <input id="check" type="checkbox" id="Minéral" value="Mineral">
                             <span>Minéral</span>
                         </label>
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Céleste">
+                            <input id="check" type="checkbox" id="Céleste" value="Celeste">
                             <span>Céleste</span>
                         </label>
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Psychique">
+                            <input id="check" type="checkbox" id="Psychique" value="Psychique">
                             <span>Psychique</span>
                         </label>
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Chaotique">
+                            <input id="check" type="checkbox" id="Chaotique" value="Chaotique">
                             <span>Chaotique</span>
                         </label>
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Toxique">
+                            <input id="check" type="checkbox" id="Toxique" value="Toxique">
                             <span>Toxique</span>
                         </label>
                         <label class="form-check">
-                            <input id="check" type="checkbox" id="Ethéré">
+                            <input id="check" type="checkbox" id="Ethéré" value="Ethere">
                             <span>Ethéré</span>
                         </label>
                     </div>
                 </div>
-                <button onclick="getType()" class="btn rounded-1 press primary collapsible-trigger mx-auto">
+                <button onclick="showmonsters()" class="btn rounded-1 press primary collapsible-trigger mx-auto">
                     Trier
                 </button>
             </div>
@@ -158,19 +106,9 @@
         <a href="#" class="sidenav-link">Zones</a>
     </div>
 
-    <main>
-        <div id="title">
-            <h1 class="txt-mole txt-dark-2 textshadow-2">Monstres</h1>
-        </div>
-        <div class="monsters-block">
-            <div class="" id="monsters-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat consequat libero euismod tempus. Quisque dictum, metus aliquam posuere semper, nibh felis interdum sem, in dapibus odio enim ut metus. Nulla sollicitudin nulla sit amet
-                    vehicula sodales. Fusce non venenatis mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eu laoreet metus. Pellentesque vestibulum nunc tellus, a viverra urna efficitur eget. Mauris porta sagittis purus eu maximus.</p>
-            </div>
-            <div class="" id="monsters-img">
-                <img class="" src="../images/Animonster_logo1.0.png" style="max-height: 400px;" alt="" />
-            </div>
-        </div>
+
+    <main id="main">
+
     </main>
 
     <footer class="footer primary">
@@ -178,6 +116,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/axentix@1.3.3/dist/js/axentix.min.js"></script>
+    <script type="text/javascript" src="../js/gettype.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+        window.onload = showmonsters()
+    </script>
 </body>
 
 </html>

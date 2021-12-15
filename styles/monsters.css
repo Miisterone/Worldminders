@@ -17,8 +17,22 @@ main {
     background-size: cover;
 }
 
-.grille{
+.grille {
     margin: 5%;
+}
+
+.img-title {
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+
+.title {
+    position: relative;
+    bottom: 80px;
+    left: 20px;
+    font-size: 50px;
+    color: darkgoldenrod;
 }
 
 #monsters-description {
@@ -33,16 +47,17 @@ main {
     background-image: url(https://www.monsterhunter.com/stories2/assets/images/common/bg_game_caption.jpg);
 }
 
-#monsters-img{
+#monsters-img {
     flex-basis: 100%;
 }
-#monsters-img img{
+
+#monsters-img img {
     max-width: 100%;
     min-width: 200px;
 }
 
 .monsters-block {
-    display: flex ;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
