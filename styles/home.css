@@ -1,5 +1,6 @@
 #main {
-    background-color: #001731;
+    background: rgb(10,93,176);
+    background: linear-gradient(90deg, rgba(10,93,176,1) 0%, rgba(3,45,89,1) 35%, rgba(0,23,48,1) 100%);
 }
 
 .navbar, .footer {
@@ -89,7 +90,7 @@
     font-size: 29px;
     text-align: justify;
     position: relative;
-    top: -43rem;
+    top: -1rem;
     right: -110%;
 }
 
@@ -98,13 +99,13 @@
     font-family: Montserrat, sans-serif;
     font-size: 90px;
     position: relative;
-    top: -36rem;
+    top: 4rem;
     right: -90%;
 }
 
 .histoire-btn{
     position: relative;
-    top: -35rem;
+    top: 5rem;
     right: -110%;
     color: #E89910;
     font-family: Montserrat, sans-serif;
@@ -127,12 +128,12 @@
     font-size: 90px;
     position: relative;
     right: 35rem;
-    top: -35rem;
+    top: 20rem;
 }
 
 .monster-btn{
     position: relative;
-    top: -30rem;
+    top: 23rem;
     right: 40rem;
     color: #E89910;
     font-family: Montserrat, sans-serif;
