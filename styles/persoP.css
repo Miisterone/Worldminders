@@ -1,81 +1,45 @@
-#MainBar {
-    position: relative;
-    margin: 2.5em auto 0;
-    height: auto;
-    width: 37vw;
-}
-
-#MainText {
-    position: relative;
-    margin: -570px auto 0;
-    height: 5vh;
-    font-size: 5vw;
-    font-family: 'Shippori Antique', sans-serif;
-    color: #FFA714;
-}
-
-#main {
-    display: inline-block;
-    background: url("../images/FontP2.jpg") #fff no-repeat bottom center fixed;
-    background-size: cover;
-}
-
-#BlockLine {
-    height: 20px;
-    width: 100%;
-}
-
-#FontP {
-    background-size: cover;
-    height: 650px;
-    width: 100%;
-
-}
-
 #head {
     display: inline-block;
 }
 
-.ContentUP {
-    height: 650px;
+#main {
+    background: rgb(10,93,176);
+    background: linear-gradient(90deg, rgba(10,93,176,1) 0%, rgba(3,45,89,1) 35%, rgba(0,23,48,1) 100%);
+    display: inline-block;
+}
+
+
+.blank {
+    margin: 50px 10% 10%;
+    width: 85%;
+    height: 65%;
+    background-color: red;
+    position: relative;
+    z-index: 100;
+}
+
+#Tittle {
+    position: absolute;
+    font-size: 3rem;
+    font-family: 'Shippori Antique', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #E89910;
+    left: 55px;
+    bottom: 55px;
+}
+
+#Description {
+    position: absolute;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #012245;
+    left: 55px;
+    bottom: 15px;
+}
+
+#LoremText {
     text-align: center;
 }
-
-.ContentLine {
-    height: 20px;
-}
-
-.ContentDown {
-    height: 644px;
-}
-
-.AllP {
-    margin-top: 40vh;
-    margin-left: 9%;
-    margin-right: 9%;
-    height: auto;
-}
-
-#ImgT {
-    width: 15vw;
-    height: 27vh;
-}
-
-#test {
-    width: 15vw;
-    height: 28vh;
-}
-
-#Chef {
-    background-color: purple;
-    position: absolute;
-    width: 15vw;
-    margin-top: 25vh;
-}
-
-#test:hover {
-    transform: scale(1.5, 1.5);
-}
-
-
-
