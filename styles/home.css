@@ -42,7 +42,6 @@
     margin: 5% 5% 10%;
     height: 700px !important;
     width: auto;
-    background-color: white;
 }
 
 .btn-download{
@@ -54,7 +53,7 @@
     height: 85px !important;
     width: 200px !important;
     left: 220px;
-    top: -11rem;
+    top: 1rem;
 }
 
 .download-txt-title{
@@ -62,16 +61,16 @@
     color: #E89910;
     font-size: 90px !important;
     position: relative;
-    top: -13rem;
+    top: 0;
     left: 100px;
 }
 
 .download-txt-subtitle{
     font-family: Montserrat, sans-serif;
-    color: #012245;
+    color: white;
     font-size: 30px !important;
     position: relative;
-    top: -13rem;
+    top: 0;
     left: 100px;
 }
 
@@ -90,7 +89,7 @@
     font-size: 29px;
     text-align: justify;
     position: relative;
-    top: -1rem;
+    top: -44rem;
     right: -110%;
 }
 
@@ -99,13 +98,13 @@
     font-family: Montserrat, sans-serif;
     font-size: 90px;
     position: relative;
-    top: 4rem;
+    top: -38rem;
     right: -90%;
 }
 
 .histoire-btn{
     position: relative;
-    top: 5rem;
+    top: -37rem;
     right: -110%;
     color: #E89910;
     font-family: Montserrat, sans-serif;
@@ -128,12 +127,12 @@
     font-size: 90px;
     position: relative;
     right: 35rem;
-    top: 20rem;
+    top: -20rem;
 }
 
 .monster-btn{
     position: relative;
-    top: 23rem;
+    top: -15rem;
     right: 40rem;
     color: #E89910;
     font-family: Montserrat, sans-serif;
