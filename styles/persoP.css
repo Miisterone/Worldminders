@@ -3,8 +3,8 @@
     background: linear-gradient(90deg, rgba(10, 93, 176, 1) 0%, rgba(3, 45, 89, 1) 35%, rgba(0, 23, 48, 1) 100%);
     min-height: 100vh;
     margin: 0;
-    padding: 0;
     inset: 0;
+    padding-bottom: 400px;
 
 }
 
@@ -16,7 +16,8 @@
     margin: 50px 10% 10%;
     width: 85%;
     height: 30em;
-    background-color: white;
+    background: url("../images/Paysage.jpg") no-repeat;
+    background-size: cover;
     position: relative;
     z-index: 9;
 }
@@ -60,16 +61,7 @@
     left: 0;
     right: 0;
     margin-bottom: 0;
-
 }
-
-
-#Padding {
-    width: 100px;
-    height: 600px;
-    position: relative;
-}
-
 
 #grid {
     margin-top: 30rem;
@@ -88,17 +80,21 @@
     border: #707070 solid;
     font-size: 18px;
     text-align: center;
-    display: table;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
+
 
 #item1 #text1 {
-    vertical-align: middle;
     color: white;
-    display: table-cell;
+    position: relative;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
 
 }
-
 #item2 {
     border: #707070 solid;
     grid-column: 3 / 4;
@@ -120,13 +116,13 @@
     border: 2px solid #E89910;
     z-index: 5;
     margin-left: 35%;
-    transform: translateY(200px);
+    transform: translateY(385px);
     position: absolute;
 }
 
 #PL {
     margin-top: 200px;
-    margin-left: 7%;
+    margin-left: 5%;
     font-size: 3rem;
     color: white;
 }
@@ -168,23 +164,21 @@
 }
 
 #Alpha {
-    position: absolute;
     font-size: 3rem;
     font-style: normal;
     font-weight: 400;
     color: #E89910;
+    position: relative;
     text-align: center;
-    margin-left: 43.5rem;
-    margin-top: -1.5em;
+    margin-top: -7rem;
 }
 
 #DescriptionAlpha {
-    position: absolute;
+    position: relative;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     color: #FFFFFF;
     text-align: center;
-    margin-left: 43rem;
-    margin-top: 0;
+    margin-top: 0.5rem;
 }
