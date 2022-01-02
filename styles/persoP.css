@@ -5,11 +5,10 @@
     margin: 0;
     inset: 0;
     padding-bottom: 400px;
-
 }
 
 .navbar-fixed {
-    z-index: 10;
+    z-index: 10000;
 }
 
 .blank {
@@ -64,7 +63,7 @@
 }
 
 #grid {
-    margin-top: 30rem;
+    margin-top: 20rem;
     height: 30em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,6 +94,7 @@
     margin-right: 20%;
 
 }
+
 #item2 {
     border: #707070 solid;
     grid-column: 3 / 4;
@@ -116,7 +116,7 @@
     border: 2px solid #E89910;
     z-index: 5;
     margin-left: 35%;
-    transform: translateY(385px);
+    transform: translateY(225px);
     position: absolute;
 }
 
@@ -170,7 +170,7 @@
     color: #E89910;
     position: relative;
     text-align: center;
-    margin-top: -7rem;
+    margin-top: 40rem;
 }
 
 #DescriptionAlpha {
@@ -181,4 +181,87 @@
     color: #FFFFFF;
     text-align: center;
     margin-top: 0.5rem;
+}
+
+button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+#carousel__button--prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19rem;
+    margin-left: 5rem;
+}
+
+#carousel__button--next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19rem;
+    margin-left: 88rem;
+}
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#block1 {
+    margin-top: 660px;
+    width: 220px;
+    height: 350px;
+    background-color: gray;
+    position: absolute;
+    z-index: 8;
+    margin-left: -920px;
+}
+
+#block2 {
+    margin-top: 650px;
+    margin-left: -500px;
+    width: 220px;
+    height: 450px;
+    background-color: lightgray;
+    position: absolute;
+    z-index: 9;
+}
+
+#block3 {
+    margin-top: 660px;
+    width: 300px;
+    height: 550px;
+    background-color: red;
+    position: absolute;
+    z-index: 10;
+}
+
+#block4 {
+    margin-top: 650px;
+    margin-left: 501px;
+    width: 220px;
+    height: 450px;
+    background-color: green;
+    z-index: 9;
+    position: absolute;
+}
+
+#block5 {
+    margin-top: 660px;
+    width: 220px;
+    height: 350px;
+    background-color: yellow;
+    position: absolute;
+    margin-left: 922px;
+    z-index: 8;
 }
