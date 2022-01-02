@@ -7,10 +7,6 @@
     padding-bottom: 400px;
 }
 
-.navbar-fixed {
-    z-index: 10000;
-}
-
 .blank {
     margin: 50px 10% 10%;
     width: 85%;
@@ -38,7 +34,7 @@
     font-family: 'Times New Roman', serif;
     font-style: normal;
     font-weight: 400;
-    color: #012245;
+    color: black;
     left: 55px;
     bottom: 15px;
 }
@@ -265,3 +261,39 @@ button {
     margin-left: 922px;
     z-index: 8;
 }
+
+.navbar, .footer {
+    background-color: black;
+}
+
+.navbar-link, .sidenav-link {
+    color: #E89910 !important;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    padding: 0 1rem !important;
+}
+
+.navbar{
+    height: 100px !important;
+}
+
+.navbar-logo{
+    height: 80px !important;
+}
+
+.btn{
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #977033;
+    color: #E89910;
+    font-size: 30px !important;
+    height: 60px;
+}
+
+.btn-navbar-download{
+    font-family: Montserrat, sans-serif;
+    position: relative;
+    top: -11px;
+}
+
