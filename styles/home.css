@@ -169,10 +169,16 @@
 
 .perso-btn{
     position: relative;
-    top: -7rem;
+    top: -15rem;
     right: -28%;
     color: #E89910;
     font-family: Montserrat, sans-serif;
     font-size: 30px;
     text-decoration: underline;
+}
+
+.rectangle{
+    width:150px;
+    height:400px;
+    background:black;
 }
