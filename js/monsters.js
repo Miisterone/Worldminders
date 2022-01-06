@@ -1,4 +1,5 @@
 var url = `http://localhost:8081/data` //lien api
+var searchbar_position = document.getElementById("searchbar").offsetTop-searchbar.scrollTop - 60
 
 let exampleDropdown = new Axentix.Dropdown('#sort-dropdown', {
     animationType: 'fade',
@@ -7,7 +8,9 @@ let exampleDropdown = new Axentix.Dropdown('#sort-dropdown', {
 
 window.onscroll = function(event) {
     let searchbar = document.getElementById("searchbar")
-
+    console.log(searchbar.offsetTop-searchbar.scrollTop, window.scrollY);
+    if(searchbar_position <= window.scrollY) searchbar.style.position = 'fixed'
+    else searchbar.style.position = 'relative'
 }
 
 function showmonsters() {
