@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="layout with-sidenav fixed-sidenav under-navbar">
+<body class="layout with-sidenav fixed-sidenav under-navbar" >
     <header>
         <div class="navbar-fixed">
             <nav class="navbar shadow-1 primary">
@@ -33,65 +33,6 @@
                 </div>
             </nav>
         </div>
-
-        <div class="sidenav shadow-1 white fixed" id="main-sidenav" data-ax="sidenav">
-            <div class="sidenav-header">
-                <button data-target="responsive-sidenav" class="sidenav-trigger"><i class="fas fa-times"></i></button>
-            </div>
-            <a href="#" class="collapsible-trigger sidenav-link" data-target="collapsible">Collapsible</a>
-            <div>
-                <div class="collapsible" id="collapsible" data-ax="collapsible">
-                    <div class="form-field">
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Neutre" value="Neutre">
-                            <span>Neutre</span>
-                        </label>
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Ardent" value="Ardent">
-                            <span>Ardent</span>
-                        </label>
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Electrique" value="Electrique">
-                            <span>Electrique</span>
-                        </label>
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Aquatique" value="Aquatique">
-                            <span>Aquatique</span>
-                        </label>
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Végétal" value="Vegetal">
-                            <span>Végétal</span>
-                        </label>
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Minéral" value="Mineral">
-                            <span>Minéral</span>
-                        </label>
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Céleste" value="Celeste">
-                            <span>Céleste</span>
-                        </label>
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Psychique" value="Psychique">
-                            <span>Psychique</span>
-                        </label>
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Chaotique" value="Chaotique">
-                            <span>Chaotique</span>
-                        </label>
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Toxique" value="Toxique">
-                            <span>Toxique</span>
-                        </label>
-                        <label class="form-check">
-                            <input id="check" type="checkbox" id="Ethéré" value="Ethere">
-                            <span>Ethéré</span>
-                        </label>
-                    </div>
-                </div>
-                <button onclick="showmonsters()" class="btn rounded-1 press primary collapsible-trigger mx-auto">
-                    Trier
-                </button>
-            </div>
     </header>
 
     <div class="sidenav white shadow-1" id="responsive-sidenav" data-ax="sidenav">
@@ -107,8 +48,34 @@
     </div>
 
 
-    <main id="main">
-
+    <main>
+        <div class="top-container">
+            <h1 class="over-landscape-title">Les créatures d'Aniphis</h1>
+            <div class="over-landscape-description">Description breve</div>
+        </div>
+        <div id="searchbar" class="grix xs2">
+            <form>
+                <div class="form-field">
+                  <div class="form-group rounded-1">
+                    <span class="form-group-txt"><img src="../images/circle.png" alt="search-icon" style="width: 25px; font-size: 0.5rem;"></span>
+                    <input type="text" id="search" class="form-control rounded-1" placeholder="Trouver un monstre" style="font-size: 1rem;"/>
+                  </div>
+                </div>
+              </form>
+            <div>
+                <img src="../images/sort-icon.png" alt="sort-icon" style="width: 28px; font-size: 1rem; vertical-align: middle; margin-right: 4px;">
+                Trier par :
+                <div class="dropdown" id="sort-dropdown" >
+                    <button type="button" class="btn rounded-1 small white txt-orange dropdown-trigger" style="font-size: 1.2rem; margin-left: -4px;">
+                        Région
+                    </button>
+                    <div class="dropdown-content white rounded-1" style="font-size: 1.1rem;">
+                      <a class="dropdown-item txt-orange" href="#">Région</a>
+                     
+                    </div>
+                  </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer primary">
@@ -117,10 +84,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axentix@1.3.3/dist/js/axentix.min.js"></script>
     <script type="text/javascript" src="../js/gettype.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/monsters.js"></script>
+    <!--
     <script>
         window.onload = showmonsters()
     </script>
+-->
 </body>
-
 </html>
