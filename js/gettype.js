@@ -1,4 +1,4 @@
-function getType() {
+function getSort() {
     var typeList = document.getElementsByTagName('input')
 
     let value = [];

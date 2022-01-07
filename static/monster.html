@@ -7,46 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.3.3/dist/css/axentix.min.css" />
     <link rel="stylesheet" href="../styles/monsters.css">
-
 </head>
 
 <body class="layout with-sidenav fixed-sidenav under-navbar" >
     <header>
         <div class="navbar-fixed">
-            <nav class="navbar shadow-1 primary">
-                <button class="btn rounded-1 hide-md-up sidenav-trigger small mr-2 primary shadow-1" data-target="responsive-sidenav">
-                    <img src="../images/Menu_icon.jpeg" alt="" style="max-width: 25px">
-                </button>
-                <a href="home.html" class="navbar-logo hide-sm-down primary">
-                    <img src="../images/Animonster_logo1.0.png" alt="Xelzs" />
+            <nav class="navbar shadow-1">
+                <a href="home.html" class="navbar-logo">
+                    <img src="../images/Animonster_logo1.0.png" alt="Animonsterlogo"/>
                 </a>
-                <a href="home.html" class="navbar-logo hide-md-up primary centered">
-                    <img src="../images/Animonster_logo1.0.png" alt="Xelzs" />
-                </a>
-
-                <div class="navbar-menu ml-auto centered">
+                <div class="navbar-menu left">
                     <a class="navbar-link hide-sm-down" href="histoire.html">Histoire</a>
                     <a class="navbar-link hide-sm-down" href="persoP.html">Personnages</a>
-                    <a class="navbar-link hide-sm-down" href="monster.html">Monstres</a>
-                    <a class="navbar-link hide-sm-down" href="#">Caractéristiques</a>
-                    <a class="navbar-link hide-sm-down" href="#">Zones</a>
+                    <a class="navbar-link hide-sm-down" href="monster.html">Créatures</a>
+                    <a class="navbar-link hide-sm-down" href="zone.html">Carte</a>
                 </div>
+                <a href="download.html" class="btn shadow-1 rounded-1" id="navbar-btn">
+                    <span class="btn-navbar-download">Acheter</span>
+                </a>
             </nav>
         </div>
     </header>
-
-    <div class="sidenav white shadow-1" id="responsive-sidenav" data-ax="sidenav">
-        <div class="sidenav-header">
-            <img src="../images/Animonster_logo1.0.png" alt="" class="sidenav-logo" />
-        </div>
-
-        <a href="histoire.html" class="sidenav-link">Histoire</a>
-        <a href="persoP.html" class="sidenav-link">Personnages</a>
-        <a href="monster.html" class="sidenav-link">Monstres</a>
-        <a href="#" class="sidenav-link">Caractéristiques</a>
-        <a href="#" class="sidenav-link">Zones</a>
-    </div>
-
 
     <main>
         <div class="top-container">
@@ -66,17 +47,20 @@
                 <img src="../images/sort-icon.png" alt="sort-icon" style="width: 28px; font-size: 1rem; vertical-align: middle; margin-right: 4px;">
                 Trier par :
                 <div class="dropdown" id="sort-dropdown" >
-                    <button type="button" class="btn rounded-1 small white txt-orange dropdown-trigger" style="font-size: 1.2rem; margin-left: -4px;">
+                    <button id="sort-btn" type="button" class="btn rounded-1 small white txt-orange dropdown-trigger" style="font-size: 1.2rem; margin-left: -4px;">
                         Région
                     </button>
-                    <div class="dropdown-content white rounded-1" style="font-size: 1.1rem;">
-                      <a class="dropdown-item txt-orange" href="#">Région</a>
-                     
+                    <div id="sort-type" class="dropdown-content white rounded-1" style="font-size: 1.1rem;">
+                      <a class="dropdown-item txt-orange cursor-pointer" id="sort-Region">Région</a>
+                      <a class="dropdown-item txt-orange cursor-pointer" id="sort-Element">Elément</a>
                     </div>
                   </div>
             </div>
         </div>
+        <div id="description" style="color: orange; width: 70%; padding-top: 80px; text-align: center;">Lorem ipsum dolor sit amet. Sint recusandae veritatis sunt eum exercitationem galisum sit earum autem qui facilis veritatis qui optio autem in ipsam eaque! Soluta amet ea laboriosam atque vel quam nostrum hic ipsum excepturi et eligendi quia quo voluptatem soluta. Sit velit voluptatibus ea atque voluptatem est quia galisum in deserunt libero est reiciendis voluptates aut aperiam architecto?</div>
+        <div id="main-content">
 
+        </div>
         <div style="width: 100px; height: 1000px;"></div>
     </main>
 
@@ -89,7 +73,7 @@
     <script type="text/javascript" src="../js/monsters.js"></script>
     <!--
     <script>
-        window.onload = showmonsters()
+        window.onload = printcontent()
     </script>
 -->
 </body>
