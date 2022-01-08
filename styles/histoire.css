@@ -47,6 +47,7 @@
     position: relative;
     z-index: 9;
     background-position: center;
+    background-color: transparent;
 }
 
 
