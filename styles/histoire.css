@@ -42,11 +42,12 @@
     margin: 50px 5% 5%;
     width: 90%;
     height: 50em;
-    background: url("../images/FontP.jpg") no-repeat;
-    background-size: cover;
+    background: url("../images/logo_project.png") no-repeat;
+    background-size: contain;
     position: relative;
     z-index: 9;
     background-position: center;
+    background-color: #69696991;
 }
 
 
