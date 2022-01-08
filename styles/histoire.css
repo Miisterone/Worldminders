@@ -1,42 +1,96 @@
-main{
-    background-color : #d6cca9;
+#main {
+    background-color: #001731;
 }
 
-#top-histoire{
-    background : url("http://localhost:8081/images/?key=background-top.jpg") #fff no-repeat bottom center fixed;
-    text-align: center;
-    height: 100vh;
-    background-size: cover;
-}
 
-#top-histoire h1 {
-    margin : 0;
-    padding-top: 40vh;
-}
-
-.image-top-histoire {
-    margin: 40px;
-}
-
-.barre{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.navbar, .footer {
     background-color: black;
 }
 
-.history-block{
-    text-align: center;
-    font-weight: 700;
+.navbar-link, .sidenav-link {
+    color: #E89910 !important;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    padding: 0 1rem !important;
 }
 
-.flex-history{
-    display: flex;
-    flex-direction: row;
+.navbar{
+    height: 100px !important;
+}
+
+.navbar-logo{
+    height: 80px !important;
+}
+
+.btn{
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #977033;
+    color: #E89910;
+    font-size: 30px !important;
+    height: 60px;
+}
+
+.btn-navbar-download{
+    font-family: Montserrat, sans-serif;
+    position: relative;
+    top: -11px;
+}
+
+.top-histoire{
+    margin: 50px 5% 5%;
+    width: 90%;
+    height: 50em;
+    background: url("../images/logo_project.png") no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 9;
+    background-position: center;
+    background-color: #69696991;
+}
+
+
+.histoire-txt-title{
+    font-family: Montserrat, sans-serif;
+    color: #E89910;
+    font-size: 90px !important;
+    position: absolute;
+    left: 55px;
+    bottom: 55px;
+}
+.history-block{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 80px;
+}
+
+.gold-text-history{
+    color: #E89910 !important;
+    font-family: Montserrat, sans-serif;
+    font-size: 29px;
     width: 80%;
+    margin : auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.flex-history-1{
+    display: inline-flex;
+    flex-direction: row;
+    width: 90%;
     margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgba(255, 255, 255, 0.5);
     margin-bottom: 40px;
+    max-height: 800px;
+}
+
+.flex-history-2{
+    display: inline-flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    max-height: 800px;
 }
 
 .img-flex-history {
@@ -44,13 +98,41 @@ main{
     display: flex;
     align-items: center;
     flex: 1;
+    width: 100%;
 }
 
-.text-flex-history {
+.text-flex-history-1 {
     padding: 1%;
-    text-align: center;
+    text-align: left;
     width: max-content;
     margin : auto;
+    color : white;
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    width: 25%;
+}
+
+.text-flex-history-2 {
+    padding: 1%;
+    text-align: right;
+    width: max-content;
+    margin : auto;
+    color : white;
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    width: 25%;
+}
+
+.img-history-1{
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+.img-history-2{
+    width: 100%;
+    height: 100%;
+    padding-right: 5%;
 }
 
 
@@ -60,18 +142,31 @@ main{
         width: 50%;
     }
 
-    .text-flex-history {
+    .text-flex-history-1 {
         width: 50%;
+        text-align: center;
     }
 
-    .img-flex-history .img-history{
+    .text-flex-history-2 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .img-flex-history .img-history-1{
         width: 100%;
+        padding-left : 0%;
+    }
+
+    .img-flex-history .img-history-2{
+        width: 100%;
+        padding-right: 0%;
     }
 }
 
 
 @media only screen and (min-width : 768px) and (max-width: 1080px) and (orientation: landscape){ /*tablette*/
     /* Styles pour cette Media Queries */
+    
     .image-top-histoire img{
         width: 80%;
     }
@@ -79,26 +174,94 @@ main{
         width: 50%;
     }
 
-    .text-flex-history {
-        width: 50%;
+    .top-histoire {
+        height: 690px !important;
     }
 
-    .img-flex-history .img-history{
+    .gold-text-history {
+        color: #E89910 !important;
+        font-family: Montserrat, sans-serif;
+        font-size: 24px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .histoire-txt-title {
+        font-family: Montserrat, sans-serif;
+        color: #E89910;
+        font-size: 70px !important;
+        position: absolute;
+        left: 55px;
+        bottom: 55px;
+    }
+
+    .text-flex-history-1 {
+        width: 50%;
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .text-flex-history-2 {
+        width: 50%;
+        text-align: right;
+        font-size: 24px;
+    }
+
+    .img-flex-history .img-history-1{
         width: 100%;
+        padding-left : 4%;
+    }
+
+    .img-flex-history .img-history-2{
+        width: 100%;
+        padding-right: 4%;
     }
 }
 
 @media only screen and (min-width : 768px) and (max-width: 1080px) and (orientation: portrait){ /*tablette*/
     /* Styles pour cette Media Queries */
+
+    .histoire-txt-title {
+        font-family: Montserrat, sans-serif;
+        color: #E89910;
+        font-size: 60px !important;
+        position: absolute;
+        left: 55px;
+        bottom: 55px;
+    }
+
+    .top-histoire{
+        margin-bottom: 10%;
+    }
+
+    .gold-text-history{
+        margin-bottom: 13%;
+    }
+    
+    
     .image-top-histoire img{
         width: 80%;
     }
-    .flex-history{
-        flex-direction: column;
+    .flex-history-1{
+        flex-direction: column-reverse;
+        max-height: none;
     }
 
-    .text-flex-history {
+    .flex-history-2{
+        flex-direction: column;
+        max-height: none;
+    }
+
+    .text-flex-history-1 {
         width: 90%;
+        text-align: center;
+    }
+
+    .text-flex-history-2 {
+        width: 90%;
+        text-align: center;
     }
 
     .img-flex-history {
@@ -106,8 +269,14 @@ main{
         margin : auto;
     }
 
-    .img-flex-history .img-history{
+    .img-flex-history .img-history-1{
         width: 100%;
+        padding-left : 0%;
+    }
+
+    .img-flex-history .img-history-2{
+        width: 100%;
+        padding-right: 0%;
     }
 }
 
@@ -118,11 +287,46 @@ main{
         width: 90%;
     }
 
-    #top-histoire{
-        height: 90vh;
+    .top-histoire{
+        height: 40em;
     }
-    .flex-history{
+    .histoire-txt-title {
+        font-family: Montserrat, sans-serif;
+        color: #E89910;
+        font-size: 55px !important;
+        position: absolute;
+        left: 20px;
+        bottom: 55px;
+    }
+
+    .flex-history-1{
+        flex-direction: column-reverse;
+        max-height: none;
+    }
+
+    .flex-history-2{
         flex-direction: column;
+        max-height: none;
+    }
+
+    .text-flex-history-1 {
+        font-family: Montserrat, sans-serif;
+        font-size: 29px;
+        width: 80%;
+        margin: auto;
+            margin-bottom: auto;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .text-flex-history-2 {
+        font-family: Montserrat, sans-serif;
+        font-size: 29px;
+        width: 80%;
+        margin: auto;
+            margin-bottom: auto;
+        text-align: center;
+        margin-bottom: 5%;
     }
 
     .text-flex-history {
@@ -134,7 +338,13 @@ main{
         margin : auto;
     }
 
-    .img-flex-history .img-history{
+    .img-flex-history .img-history-1{
         width: 100%;
+        padding-left : 0%;
+    }
+
+    .img-flex-history .img-history-2{
+        width: 100%;
+        padding-right: 0%;
     }
 }
