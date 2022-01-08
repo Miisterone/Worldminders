@@ -1,5 +1,5 @@
 #main {
-    background-color: #001731;
+    background: linear-gradient(90deg, rgba(10,93,176,1) 0%, rgba(3,45,89,1) 35%, rgba(0,23,48,1) 100%);
 }
 
 
@@ -47,7 +47,7 @@
     position: relative;
     z-index: 9;
     background-position: center;
-    background-color: #69696991;
+    background-color: transparent;
 }
 
 
