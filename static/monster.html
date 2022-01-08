@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Monstres</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.3.3/dist/css/axentix.min.css" />
+    <link rel="stylesheet" href="../styles/monsters.css">
+</head>
+
+<body class="layout with-sidenav fixed-sidenav under-navbar">
+    <header>
+        <div class="navbar-fixed">
+            <nav class="navbar shadow-1 primary">
+                <button class="btn rounded-1 hide-md-up sidenav-trigger small mr-2 primary shadow-1" data-target="responsive-sidenav">
+                    <img src="http://localhost:8081/images/?key=Menu_icon.jpeg" alt="" style="max-width: 25px">
+                </button>
+                <a href="home.html" class="navbar-logo hide-sm-down primary">
+                    <img src="http://localhost:8081/images/?key=Animonster_logo1.0.png" alt="Xelzs" />
+                </a>
+                <a href="home.html" class="navbar-logo hide-lg-up primary centered">
+                    <img src="http://localhost:8081/images/?key=Animonster_logo1.0.png" alt="Xelzs" />
+                </a>
+
+                <div class="navbar-menu ml-auto centered">
+                    <a class="navbar-link hide-sm-down" href="histoire.html">Histoire</a>
+                    <a class="navbar-link hide-sm-down" href="persoP.html">Personnages</a>
+                    <a class="navbar-link hide-sm-down" href="monster.html">Monstres</a>
+                    <a class="navbar-link hide-sm-down" href="#">Caractéristiques</a>
+                    <a class="navbar-link hide-sm-down" href="#">Zones</a>
+                </div>
+                <div class="dropdown ml-auto hide-lg-up search" data-ax="dropdown">
+                    <button type="button" class="btn shadow-1 rounded-1 primary dropdown-trigger">
+                        Rechercher
+                    </button>
+                    <div class="dropdown-content white right-aligned shadow-1 rounded-1">
+                        <div class="form-field">
+                            <label class="form-check">
+                                <input type="checkbox">
+                                <span>Neutre</span>
+                            </label><label class="form-check">
+                                <input type="checkbox">
+                                <span>Ardent</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox">
+                                <span>Electrique</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox">
+                                <span>Aquatique</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox">
+                                <span>Végétal</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox">
+                                <span>Minéral</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox">
+                                <span>Céleste</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox">
+                                <span>Psychique</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox">
+                                <span>Chaotique</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox">
+                                <span>Toxique</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox">
+                                <span>Ethéré</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="sidenav shadow-1 white fixed" id="main-sidenav" data-ax="sidenav">
+            <div class="sidenav-header">
+                <button data-target="responsive-sidenav" class="sidenav-trigger"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="white rounded-1">
+                <div class="card shadow-1 rounded-2 bd-blue bd-dotted bd-3 search" style="margin: 10px;">
+                    <div class="card-header txt-left">Element</div>
+                    <div class="form-field card-content" id="card-content">
+                        <label class="form-check">
+                        <input type="checkbox">
+                        <span>Neutre</span>
+                    </label><label class="form-check">
+                        <input type="checkbox">
+                        <span>Ardent</span>
+                    </label>
+                        <label class="form-check">
+                        <input type="checkbox">
+                        <span>Electrique</span>
+                    </label>
+                        <label class="form-check">
+                        <input type="checkbox">
+                        <span>Aquatique</span>
+                    </label>
+                        <label class="form-check">
+                        <input type="checkbox">
+                        <span>Végétal</span>
+                    </label>
+                        <label class="form-check">
+                        <input type="checkbox">
+                        <span>Minéral</span>
+                    </label>
+                        <label class="form-check">
+                        <input type="checkbox">
+                        <span>Céleste</span>
+                    </label>
+                        <label class="form-check">
+                        <input type="checkbox">
+                        <span>Psychique</span>
+                    </label>
+                        <label class="form-check">
+                        <input type="checkbox">
+                        <span>Chaotique</span>
+                    </label>
+                        <label class="form-check">
+                        <input type="checkbox">
+                        <span>Toxique</span>
+                    </label>
+                        <label class="form-check">
+                        <input type="checkbox">
+                        <span>Ethéré</span>
+                    </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidenav white shadow-1" id="responsive-sidenav" data-ax="sidenav">
+        <div class="sidenav-header">
+            <img src="http://localhost:8081/images/?key=Animonster_logo1.0.png" alt="" class="sidenav-logo" />
+        </div>
+
+        <a href="histoire.html" class="sidenav-link">Histoire</a>
+        <a href="persoP.html" class="sidenav-link">Personnages</a>
+        <a href="monster.html" class="sidenav-link">Monstres</a>
+        <a href="#" class="sidenav-link">Caractéristiques</a>
+        <a href="#" class="sidenav-link">Zones</a>
+    </div>
+
+    <main>
+        <div id="title">
+            <h1 class="txt-mole txt-dark-2 textshadow-2">Monstres</h1>
+        </div>
+        <div style="justify-content: center;">
+            <img id="title-deco" src="https://www.monsterhunter.com/stories2/assets/../images/common/deco_element.png" alt="">
+        </div>
+        <div id="grix" class="grix xs1 sm1 md2 lg5">
+            <div class="vself-center col-lg3 " id="monsters-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis mauris eros, eu volutpat arcu vehicula sed. Duis quis nunc porta, laoreet leo quis, consectetur velit. Aliquam mattis convallis mauris sit amet egestas. .</p>
+            </div>
+            <div class="caroulix pos-row-md1 pos-row-sm1 pos-row-xs1 pos-row-lg1" id="monsters-caroulix" data-ax="caroulix" data-caroulix-indicators-enabled="true" data-caroulix-indicators-is-flat="true">
+                <div class="caroulix-item">
+                    <img src="http://localhost:8081/images/?key=Animonster_logo1.0.png" alt="img1" style="height: 80%"/>
+                </div>
+                <div class="caroulix-item">
+                    <img src="http://localhost:8081/images/?key=Animonster_logo1.0.png" alt="img2" />
+                </div>
+                <div class="caroulix-item">
+                    <img src="http://localhost:8081/images/?key=Animonster_logo1.0.png" alt="img3" />
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer primary">
+        Copyright © 2021 - Animonsters
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axentix@1.3.3/dist/js/axentix.min.js"></script>
+</body>
+
+</html>
