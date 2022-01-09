@@ -52,8 +52,8 @@
 .container-download{
     height: 85px !important;
     width: 200px !important;
-    left: 220px;
-    top: 1rem;
+    left: 20%;
+    top: 5%;
 }
 
 .download-txt-title{
@@ -61,8 +61,8 @@
     color: #E89910;
     font-size: 90px !important;
     position: relative;
-    top: 0;
-    left: 100px;
+    top: 20px;
+    left: -10%;
 }
 
 .download-txt-subtitle{
@@ -70,8 +70,8 @@
     color: white;
     font-size: 30px !important;
     position: relative;
-    top: 0;
-    left: 100px;
+    top: 20px;
+    left: 14.5%;
 }
 
 .histoire{
@@ -104,12 +104,12 @@
 
 .histoire-btn{
     position: relative;
-    top: -37rem;
-    right: -110%;
     color: #E89910;
     font-family: Montserrat, sans-serif;
     font-size: 30px;
     text-decoration: underline;
+    top: -35rem;
+    right: -15rem;
 }
 
 .monster{
@@ -178,7 +178,14 @@
 }
 
 .rectangle{
-    width:150px;
+    width:180px;
     height:400px;
     background:black;
+}
+
+.img-logo{
+    width:25%;
+    position: relative;
+    left: 35%;
+    top: -30px;
 }
