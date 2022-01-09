@@ -31,9 +31,17 @@ async function printcontent() {
                     </div>
                     <img class = "bd-solid bd-orange dark-4" src="../images/black-img.png" id="collapsible-img" alt="test-png">
                 </div>
-                <div id="${array_region[i]}" style="display:none; margin-top: 20px; padding: 15px;">Lorem ipsum dolor sit amet. Ut debitis velit nam suscipit sint et recusandae vitae et labore quisquam et similique voluptate eum saepe suscipit. Ut cumque fugiat et velit molestiae qui nemo delectus a ducimus tempora aut doloremque itaque. Ea
-                laudantium fuga et omnis quia est optio voluptate ut voluptatem voluptas et molestiae molestiae et repudiandae excepturi. Est minima explicabo est ratione repellendus in suscipit illum id sunt porro. Sed illo delectus eum maxime voluptatum
-                ut autem dolorem. Ea libero repellendus 33 exercitationem suscipit aut similique repellendus aut architecto aliquam au
+                <div id="${array_region[i]}" style="display:none; margin-top: 20px; padding: 15px; justify-content: center; flex-wrap: wrap;">
+                <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
                 </div>
             </div>
             `
@@ -51,9 +59,16 @@ async function printcontent() {
                     </div>
                     <img class = "bd-solid bd-orange dark-4" src="../images/black-img.png" id="collapsible-img" alt="test-png">
                 </div>
-                <div id="${array_element[i]}"style="display:none; margin-top: 20px; padding: 20px;">Lorem ipsum dolor sit amet. Ut debitis velit nam suscipit sint et recusandae vitae et labore quisquam et similique voluptate eum saepe suscipit. Ut cumque fugiat et velit molestiae qui nemo delectus a ducimus tempora aut doloremque itaque. Ea
-                laudantium fuga et omnis quia est optio voluptate ut voluptatem voluptas et molestiae molestiae et repudiandae excepturi. Est minima explicabo est ratione repellendus in suscipit illum id sunt porro. Sed illo delectus eum maxime voluptatum
-                ut autem dolorem. Ea libero repellendus 33 exercitationem suscipit aut similique repellendus aut architecto aliquam au
+                <div id="${array_element[i]}"style="display:none; margin-top: 20px; padding: 25px; justify-content: center; flex-wrap: wrap;">
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    
                 </div>
             </div>
             `
