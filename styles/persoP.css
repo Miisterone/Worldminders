@@ -11,7 +11,7 @@
     margin: 50px 10% 10%;
     width: 85%;
     height: 30em;
-    background: url("../images/Paysage.jpg") no-repeat;
+    background: url("http://localhost:8081/images/?key=env.jpg") no-repeat;
     background-size: cover;
     position: relative;
     z-index: 9;
@@ -20,9 +20,9 @@
 #Tittle {
     position: absolute;
     font-size: 3rem;
-    font-family: 'Shippori Antique', serif;
+    font-family: 'Montserrat', serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     color: #E89910;
     left: 55px;
     bottom: 55px;
@@ -34,7 +34,7 @@
     font-family: 'Times New Roman', serif;
     font-style: normal;
     font-weight: 400;
-    color: black;
+    color: white;
     left: 55px;
     bottom: 15px;
 }
@@ -58,7 +58,7 @@
     margin-bottom: 0;
 }
 
-#grid {
+.d-grid {
     margin-top: 20rem;
     height: 30em;
     display: grid;
@@ -194,7 +194,7 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 19rem;
-    margin-left: 5rem;
+    margin-left: 4%;
 }
 
 #carousel__button--next {
@@ -202,7 +202,7 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 19rem;
-    margin-left: 88rem;
+    margin-left: 94%;
 }
 
 
@@ -274,15 +274,15 @@ button {
     padding: 0 1rem !important;
 }
 
-.navbar{
+.navbar {
     height: 100px !important;
 }
 
-.navbar-logo{
+.navbar-logo {
     height: 80px !important;
 }
 
-.btn{
+.btn {
     margin-left: auto;
     margin-right: 0;
     background-color: #977033;
@@ -291,9 +291,14 @@ button {
     height: 60px;
 }
 
-.btn-navbar-download{
+.btn-navbar-download {
     font-family: Montserrat, sans-serif;
     position: relative;
     top: -11px;
 }
 
+@media (min-width: 2230px)  {
+    .d-grid {
+        transform: translateX(35%);
+    }
+}
