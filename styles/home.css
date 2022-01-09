@@ -1,44 +1,184 @@
-#main{
-    background-image: url("../images/bg_news.jpg");
+#main {
+    background: rgb(10,93,176);
+    background: linear-gradient(90deg, rgba(10,93,176,1) 0%, rgba(3,45,89,1) 35%, rgba(0,23,48,1) 100%);
 }
 
-.delimiter{
+.navbar, .footer {
+    background-color: black;
+}
+
+.navbar-link, .sidenav-link {
+    color: #E89910 !important;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    padding: 0 1rem !important;
+}
+
+.navbar{
+    height: 100px !important;
+}
+
+.navbar-logo{
+    height: 80px !important;
+}
+
+.btn{
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #977033;
+    color: #E89910;
+    font-size: 30px !important;
+    height: 60px;
+}
+
+.btn-navbar-download{
+    font-family: Montserrat, sans-serif;
     position: relative;
-    background-color: darkgrey;
+    top: -11px;
+}
+
+.download{
+    margin: 5% 5% 10%;
+    height: 700px !important;
     width: auto;
-    height: 1%;
 }
 
-#monster{
+.btn-download{
+    font-family: Montserrat, sans-serif;
     position: relative;
-    margin: 40px auto;
-    object-fit: cover;
-    width: 800px !important;
-    height: 800px !important;
 }
 
-#footer{
+.container-download{
+    height: 85px !important;
+    width: 200px !important;
+    left: 220px;
+    top: 1rem;
+}
+
+.download-txt-title{
+    font-family: Montserrat, sans-serif;
+    color: #E89910;
+    font-size: 90px !important;
     position: relative;
-    z-index: 1;
+    top: 0;
+    left: 100px;
 }
 
-.downloadTxt{
-    position: relative;
-    padding-left: 48%;
-    padding-bottom: 30px;
-}
-
-#history{
-    position: relative;
-    display: flex;
-    padding: 5%;
-}
-
-.logo{
-    width: 35%;
-    margin-right: auto;
-}
-
-.text{
+.download-txt-subtitle{
+    font-family: Montserrat, sans-serif;
     color: white;
+    font-size: 30px !important;
+    position: relative;
+    top: 0;
+    left: 100px;
+}
+
+.histoire{
+    margin: 5% 5% 10%;
+    height: 700px !important;
+    width: 50%;
+    background-color: white;
+}
+
+.histoire-txt{
+    height: 300px !important;
+    width: 650px !important;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 29px;
+    text-align: justify;
+    position: relative;
+    top: -44rem;
+    right: -110%;
+}
+
+.histoire-title{
+    color: #E89910;
+    font-family: Montserrat, sans-serif;
+    font-size: 90px;
+    position: relative;
+    top: -38rem;
+    right: -90%;
+}
+
+.histoire-btn{
+    position: relative;
+    top: -37rem;
+    right: -110%;
+    color: #E89910;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.monster{
+    margin: 5% 5% 10%;
+    height: 700px !important;
+    width: 50%;
+    background-color: white;
+    position: relative;
+    left: 40%;
+}
+
+.monster-title{
+    color: #E89910;
+    font-family: Montserrat, sans-serif;
+    font-size: 90px;
+    position: relative;
+    right: 35rem;
+    top: -20rem;
+}
+
+.monster-btn{
+    position: relative;
+    top: -15rem;
+    right: 40rem;
+    color: #E89910;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#caroulix-perso{
+    margin-top: 10%;
+    height: 50%;
+    width: 50%;
+    left: 25%;
+}
+
+.perso-title{
+    color: #E89910;
+    font-family: Montserrat, sans-serif;
+    font-size: 90px;
+    position: relative;
+    left: 22%;
+    top: 1rem;
+}
+
+.perso-txt{
+    height: 300px !important;
+    width: 900px !important;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: 1rem;
+    right: -28%;
+}
+
+.perso-btn{
+    position: relative;
+    top: -15rem;
+    right: -28%;
+    color: #E89910;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.rectangle{
+    width:150px;
+    height:400px;
+    background:black;
 }
