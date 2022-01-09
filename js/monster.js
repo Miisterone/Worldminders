@@ -4,6 +4,7 @@ var sort_content = document.getElementById("main-content")
 const array_element = ["Neutre", "Ardent", "Électrique", "Aquatique", "Végétal", "Minéral", "Céleste", "Psychique", "Chaotique", "Toxique", "Éthéré"]
 const array_region = ["Forêt", "Désert"]
 var old_id;
+var old_parent_id;
 
 let exampleDropdown = new Axentix.Dropdown('#sort-dropdown', {
     animationType: 'fade',
@@ -22,15 +23,15 @@ async function printcontent() {
     for (let i = 0; i < array_region.length; i++) {
 
         allcontent +=
-            `<div>
-                <div class="collapsible-trigger" onclick="func(${array_region[i]})">
+            `<div style="width: 80vw; margin-top: 50px; border-radius: 60px; background-color: #977033;" id="parent-${array_region[i]}">
+                <div class="collapsible-trigger" onclick="func(${array_region[i]}, 'parent-${array_region[i]}')">
                     <div style="width:100px;"></div>
                     <div id="collapsible-title">
                             ${array_region[i]}
                     </div>
                     <img class = "bd-solid bd-orange dark-4" src="../images/black-img.png" id="collapsible-img" alt="test-png">
                 </div>
-                <div id="${array_region[i]}" style="display:none">Lorem ipsum dolor sit amet. Ut debitis velit nam suscipit sint et recusandae vitae et labore quisquam et similique voluptate eum saepe suscipit. Ut cumque fugiat et velit molestiae qui nemo delectus a ducimus tempora aut doloremque itaque. Ea
+                <div id="${array_region[i]}" style="display:none; margin-top: 20px; padding: 15px;">Lorem ipsum dolor sit amet. Ut debitis velit nam suscipit sint et recusandae vitae et labore quisquam et similique voluptate eum saepe suscipit. Ut cumque fugiat et velit molestiae qui nemo delectus a ducimus tempora aut doloremque itaque. Ea
                 laudantium fuga et omnis quia est optio voluptate ut voluptatem voluptas et molestiae molestiae et repudiandae excepturi. Est minima explicabo est ratione repellendus in suscipit illum id sunt porro. Sed illo delectus eum maxime voluptatum
                 ut autem dolorem. Ea libero repellendus 33 exercitationem suscipit aut similique repellendus aut architecto aliquam au
                 </div>
@@ -42,15 +43,15 @@ async function printcontent() {
     allcontent += `<div id="Element">`
     for (let i = 0; i < array_element.length; i++) {
         allcontent +=
-            `<div>
-                <div class="collapsible-trigger" onclick="func(${array_element[i]})">
+            `<div style="width: 80vw; margin-top: 50px; border-radius: 60px; background-color: #977033;" id="parent-${array_element[i]}">
+                <div class="collapsible-trigger" onclick="func(${array_element[i]}, 'parent-${array_element[i]}')">
                     <div style="width:100px;"></div>
                     <div id="collapsible-title">
                             ${array_element[i]}
                     </div>
                     <img class = "bd-solid bd-orange dark-4" src="../images/black-img.png" id="collapsible-img" alt="test-png">
                 </div>
-                <div id="${array_element[i]}"style="display:none">Lorem ipsum dolor sit amet. Ut debitis velit nam suscipit sint et recusandae vitae et labore quisquam et similique voluptate eum saepe suscipit. Ut cumque fugiat et velit molestiae qui nemo delectus a ducimus tempora aut doloremque itaque. Ea
+                <div id="${array_element[i]}"style="display:none; margin-top: 20px; padding: 20px;">Lorem ipsum dolor sit amet. Ut debitis velit nam suscipit sint et recusandae vitae et labore quisquam et similique voluptate eum saepe suscipit. Ut cumque fugiat et velit molestiae qui nemo delectus a ducimus tempora aut doloremque itaque. Ea
                 laudantium fuga et omnis quia est optio voluptate ut voluptatem voluptas et molestiae molestiae et repudiandae excepturi. Est minima explicabo est ratione repellendus in suscipit illum id sunt porro. Sed illo delectus eum maxime voluptatum
                 ut autem dolorem. Ea libero repellendus 33 exercitationem suscipit aut similique repellendus aut architecto aliquam au
                 </div>
@@ -105,9 +106,25 @@ function SearchbarPlacement() {
     }
 }
 
-function func(id) {
-    if (old_id) old_id.style.display = "none"
-    if (id.style.display == "none") id.style.display = "flex"
-    else id.style.display = "none"
+function func(id, parentId) {
+    if (id.style.display == "none") {
+        id.style.display = "flex"
+        document.getElementById(parentId).style.borderRadius = '10px'
+        document.querySelector(`#${parentId} #collapsible-img`).style.marginLeft = '40px'
+        document.querySelector(`#${parentId} #collapsible-img`).style.marginTop = '-40px'
+    } else {
+        id.style.display = "none"
+        document.getElementById(parentId).style.borderRadius = '60px'
+        document.querySelector(`#${parentId} #collapsible-img`).style.marginLeft = '0'
+        document.querySelector(`#${parentId} #collapsible-img`).style.marginTop = '0'
+    }
+
+    if (old_id && old_id != id) {
+        old_id.style.display = "none"
+        document.getElementById(old_parent_id).style.borderRadius = '60px'
+        document.querySelector(`#${old_parent_id} #collapsible-img`).style.marginLeft = '0'
+        document.querySelector(`#${old_parent_id} #collapsible-img`).style.marginTop = '0'
+    }
     old_id = id
+    old_parent_id = parentId
 }
