@@ -48,7 +48,7 @@ function printcontent() {
                 }
             }
             if (sort_type == "Région") {
-                var array_region = ["Forêt", "Désert", "aaa", "bbbb"]
+                var array_region = ["Forêt", "Désert"]
                 for (let i = 0; i < array_region.length; i++) {
                     document.getElementById("main-content").innerHTML +=
                         `<div class="collapsible-trigger">
