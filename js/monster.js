@@ -59,17 +59,25 @@ async function printcontent() {
                     </div>
                     <img class = "bd-solid bd-orange dark-4" src="../images/black-img.png" id="collapsible-img" alt="test-png">
                 </div>
-                <div id="${array_element[i]}"style="display:none; margin-top: 20px; padding: 25px; justify-content: center; flex-wrap: wrap;">
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                <div id="${array_element[i]}"style="display:none; margin-top: 20px; padding: 25px; justify-content: center; flex-wrap: wrap;">`
                     
-                </div>
+                for (let value in data){
+                    if (data[value].type == array_element[i]){
+                        allcontent += `<img src="${data[value].image}" style ="max-width: 200px; max-height: 200px; background: white; margin: 25px 25px"> `
+                    }
+                }       
+                
+                
+            allcontent +=   `<div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>`
+
+                 
+        allcontent += `</div>
             </div>
             `
     }
@@ -94,7 +102,6 @@ async function printcontent() {
 
 function displaycontent() {
     let sort_type = document.getElementById('sort-btn').textContent
-    console.log(sort_type);
     if (sort_type === "Elément") {
         document.getElementById("Element").style.display = "flex"
         document.getElementById("Region").style.display = "none"
