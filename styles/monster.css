@@ -98,7 +98,16 @@ main {
     font-size: 2rem;
 }
 
-#collapsible-img {
+#collapsible-img-container{
+    background-color: white;
     border-radius: 50%;
     height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#collapsible-img {
+    height: 80px;
 }

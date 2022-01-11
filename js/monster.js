@@ -50,6 +50,7 @@ async function printcontent() {
     allcontent += `</div>`
     allcontent += `<div id="Element">`
     for (let i = 0; i < array_element.length; i++) {
+        var img_src= "../images/type_logo/" + array_element[i] + ".png"
         allcontent +=
             `<div style="width: 80vw; margin-top: 50px; border-radius: 60px; background-color: #977033;" id="parent-${array_element[i]}">
                 <div class="collapsible-trigger" onclick="func(${array_element[i]}, 'parent-${array_element[i]}')">
@@ -57,7 +58,9 @@ async function printcontent() {
                     <div id="collapsible-title">
                             ${array_element[i]}
                     </div>
-                    <img class = "bd-solid bd-orange dark-4" src="../images/black-img.png" id="collapsible-img" alt="test-png">
+                    <div class = "bd-solid bd-orange dark-4" id="collapsible-img-container">
+                    <img src="${img_src}" id="collapsible-img" alt="element.png">
+                    </div>
                 </div>
                 <div id="${array_element[i]}"style="display:none; margin-top: 20px; padding: 25px; justify-content: center; flex-wrap: wrap;">`
                     
@@ -132,23 +135,23 @@ function func(id, parentId) {
     if (id.style.display == "none") {
         id.style.display = "flex"
         document.getElementById(parentId).style.borderRadius = '10px'
-        document.querySelector(`#${parentId} #collapsible-img`).style.marginTop = '-40px'
+        document.querySelector(`#${parentId} #collapsible-img-container`).style.marginTop = '-40px'
         if (document.querySelector(`#${parentId} .collapsible-trigger`).style.flexDirection == 'row-reverse') {
-            document.querySelector(`#${parentId} #collapsible-img`).style.marginLeft = '40px'
+            document.querySelector(`#${parentId} #collapsible-img-container`).style.marginLeft = '40px'
             document.querySelector(`#${parentId} #collapsible-title`).style.marginRight = '40px'
         } else {
-            document.querySelector(`#${parentId} #collapsible-img`).style.marginRight = '40px'
+            document.querySelector(`#${parentId} #collapsible-img-container`).style.marginRight = '40px'
             document.querySelector(`#${parentId} #collapsible-title`).style.marginLeft = '40px'
         }
     } else {
         id.style.display = "none"
         document.getElementById(parentId).style.borderRadius = '60px'
-        document.querySelector(`#${parentId} #collapsible-img`).style.marginTop = '0'
+        document.querySelector(`#${parentId} #collapsible-img-container`).style.marginTop = '0'
         if (document.querySelector(`#${parentId} .collapsible-trigger`).style.flexDirection == 'row-reverse') {
-            document.querySelector(`#${parentId} #collapsible-img`).style.marginLeft = '0'
+            document.querySelector(`#${parentId} #collapsible-img-container`).style.marginLeft = '0'
             document.querySelector(`#${parentId} #collapsible-title`).style.marginRight = '0'
         } else {
-            document.querySelector(`#${parentId} #collapsible-img`).style.marginRight = '0'
+            document.querySelector(`#${parentId} #collapsible-img-container`).style.marginRight = '0'
             document.querySelector(`#${parentId} #collapsible-title`).style.marginLeft = '0'
         }
     }
@@ -156,12 +159,12 @@ function func(id, parentId) {
     if (old_id && old_id != id) {
         old_id.style.display = "none"
         document.getElementById(old_parent_id).style.borderRadius = '60px'
-        document.querySelector(`#${old_parent_id} #collapsible-img`).style.marginTop = '0'
+        document.querySelector(`#${old_parent_id} #collapsible-img-container`).style.marginTop = '0'
         if (document.querySelector(`#${old_parent_id} .collapsible-trigger`).style.flexDirection == 'row-reverse') {
-            document.querySelector(`#${old_parent_id} #collapsible-img`).style.marginLeft = '0'
+            document.querySelector(`#${old_parent_id} #collapsible-img-container`).style.marginLeft = '0'
             document.querySelector(`#${old_parent_id} #collapsible-title`).style.marginRight = '0'
         } else {
-            document.querySelector(`#${old_parent_id} #collapsible-img`).style.marginRight = '0'
+            document.querySelector(`#${old_parent_id} #collapsible-img-container`).style.marginRight = '0'
             document.querySelector(`#${old_parent_id} #collapsible-title`).style.marginLeft = '0'
         }
     }
