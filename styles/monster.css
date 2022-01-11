@@ -98,8 +98,8 @@ main {
     font-size: 2rem;
 }
 
-#collapsible-img-container{
-    background-color: white;
+#collapsible-img-container {
+    background-color: black;
     border-radius: 50%;
     height: 100px;
     width: 100px;
@@ -109,5 +109,5 @@ main {
 }
 
 #collapsible-img {
-    height: 80px;
+    height: 70px;
 }
