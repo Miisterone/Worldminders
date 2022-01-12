@@ -1,11 +1,17 @@
-#main {
+body{
+    
     background: linear-gradient(90deg, rgba(10,93,176,1) 0%, rgba(3,45,89,1) 35%, rgba(0,23,48,1) 100%);
 }
 
+main{
+    max-width: 2560px;
+    margin:auto;
+}
 
 .navbar, .footer {
     background-color: black;
 }
+
 
 .navbar-link, .sidenav-link {
     color: #E89910 !important;
@@ -175,13 +181,13 @@
     }
 
     .top-histoire {
-        height: 690px !important;
+        height: 500px !important;
     }
 
     .gold-text-history {
         color: #E89910 !important;
         font-family: Montserrat, sans-serif;
-        font-size: 24px;
+        font-size: 22px;
         width: 80%;
         margin: auto;
         text-align: center;
@@ -200,13 +206,13 @@
     .text-flex-history-1 {
         width: 50%;
         text-align: left;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .text-flex-history-2 {
         width: 50%;
         text-align: right;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .img-flex-history .img-history-1{
@@ -234,10 +240,12 @@
 
     .top-histoire{
         margin-bottom: 10%;
+        height: 500px;
     }
 
     .gold-text-history{
         margin-bottom: 13%;
+        font-size: 27px;
     }
     
     
@@ -257,16 +265,19 @@
     .text-flex-history-1 {
         width: 90%;
         text-align: center;
+        font-size: 27px;
     }
 
     .text-flex-history-2 {
         width: 90%;
         text-align: center;
+        font-size: 27px;
     }
 
     .img-flex-history {
         width: 80%;
         margin : auto;
+        margin-bottom: 100px;
     }
 
     .img-flex-history .img-history-1{
