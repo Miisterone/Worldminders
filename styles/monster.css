@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(#001730, #0A5DB0);
+    background: linear-gradient(90deg, rgba(10, 93, 176, 1) 0%, rgba(3, 45, 89, 1) 35%, rgba(0, 23, 48, 1) 100%);
 }
 
 .navbar,
@@ -44,6 +44,8 @@ main {
     flex-direction: column;
     align-items: center;
     padding-left: 0 !important;
+    max-width: 2560px;
+    margin: auto;
 }
 
 .top-container {
@@ -78,6 +80,8 @@ main {
     font-size: 1.2rem;
     justify-items: center;
 }
+
+#sort-container {}
 
 #main-content {
     margin-top: 50px;

@@ -29,7 +29,9 @@ async function printcontent() {
                     <div id="collapsible-title">
                             ${array_region[i]}
                     </div>
-                    <img class = "bd-solid bd-orange dark-4" src="../images/black-img.png" id="collapsible-img" alt="test-png">
+                    <div class = "bd-solid bd-orange dark-4" id="collapsible-img-container">
+                    <img src="${img_src}" id="collapsible-img" alt="region.png">
+                    </div>
                 </div>
                 <div id="${array_region[i]}" style="display:none; margin-top: 20px; padding: 15px; justify-content: center; flex-wrap: wrap;">
                 <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
@@ -50,7 +52,7 @@ async function printcontent() {
     allcontent += `</div>`
     allcontent += `<div id="Element">`
     for (let i = 0; i < array_element.length; i++) {
-        var img_src= "../images/type_logo/" + array_element[i] + ".png"
+        var img_src = "../images/type_logo/" + array_element[i] + ".png"
         allcontent +=
             `<div style="width: 80vw; margin-top: 50px; border-radius: 60px; background-color: #977033;" id="parent-${array_element[i]}">
                 <div class="collapsible-trigger" onclick="func(${array_element[i]}, 'parent-${array_element[i]}')">
@@ -63,15 +65,15 @@ async function printcontent() {
                     </div>
                 </div>
                 <div id="${array_element[i]}"style="display:none; margin-top: 20px; padding: 25px; justify-content: center; flex-wrap: wrap;">`
-                    
-                for (let value in data){
-                    if (data[value].type == array_element[i]){
-                        allcontent += `<img src="${data[value].image}" style ="max-width: 200px; max-height: 200px; background: white; margin: 25px 25px"> `
-                    }
-                }       
-                
-                
-            allcontent +=   `<div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+
+        for (let value in data) {
+            if (data[value].type == array_element[i]) {
+                allcontent += `<img src="${data[value].image}" style ="max-width: 200px; max-height: 200px; background: white; margin: 25px 25px"> `
+            }
+        }
+
+
+        allcontent += `<div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
                     <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
                     <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
                     <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
@@ -79,7 +81,7 @@ async function printcontent() {
                     <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
                     <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>`
 
-                 
+
         allcontent += `</div>
             </div>
             `

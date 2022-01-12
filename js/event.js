@@ -17,17 +17,25 @@ document.getElementById("sort-Element").addEventListener('click', () => {
 })
 
 document.getElementById("sort-Region").addEventListener('click', () => {
-        document.getElementById('sort-btn').textContent = 'Région'
-        displaycontent()
-    })
-    /*
-    let collapsible = document.querySelectorAll('.collapsible-trigger')
+    document.getElementById('sort-btn').textContent = 'Région'
+    displaycontent()
+})
 
-    for (let val of collapsible) {
-        console.log(val);
-        val.addEventListener('click', () => {
-            console.log(val.getAttribute("id"))
-            console.log('test')
-        })
-    }
-    */
+document.getElementById("sort-Physical-trait").addEventListener('click', () => {
+    document.getElementById('sort-btn').textContent = 'Trait physique'
+    displaycontent()
+})
+
+
+
+/*
+let collapsible = document.querySelectorAll('.collapsible-trigger')
+
+for (let val of collapsible) {
+    console.log(val);
+    val.addEventListener('click', () => {
+        console.log(val.getAttribute("id"))
+        console.log('test')
+    })
+}
+*/
