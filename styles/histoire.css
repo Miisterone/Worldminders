@@ -237,6 +237,7 @@ main{
         position: absolute;
         left: 55px;
         bottom: 55px;
+        text-align: center;
     }
 
     .top-histoire{
@@ -300,6 +301,8 @@ main{
         width: 90%;
     }
 
+
+
     .top-histoire{
         height: 30em;
         margin-top: 0px;
@@ -315,6 +318,7 @@ main{
         position: absolute;
         left: 20px;
         bottom: 55px;
+        text-align: center;
     }
 
     .flex-history-1{
