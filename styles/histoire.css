@@ -1,11 +1,17 @@
-#main {
+body{
+    
     background: linear-gradient(90deg, rgba(10,93,176,1) 0%, rgba(3,45,89,1) 35%, rgba(0,23,48,1) 100%);
 }
 
+main{
+    max-width: 2560px;
+    margin:auto;
+}
 
 .navbar, .footer {
     background-color: black;
 }
+
 
 .navbar-link, .sidenav-link {
     color: #E89910 !important;
@@ -42,7 +48,7 @@
     margin: 50px 5% 5%;
     width: 90%;
     height: 50em;
-    background: url("../images/logo_navbar.png") no-repeat;
+    background: url("../images/AniphissMonsters_logo.png") no-repeat;
     background-size: contain;
     position: relative;
     z-index: 9;
@@ -175,13 +181,14 @@
     }
 
     .top-histoire {
-        height: 690px !important;
+        height: 500px !important;
+        margin-top: 25px;
     }
 
     .gold-text-history {
         color: #E89910 !important;
         font-family: Montserrat, sans-serif;
-        font-size: 24px;
+        font-size: 22px;
         width: 80%;
         margin: auto;
         text-align: center;
@@ -200,13 +207,13 @@
     .text-flex-history-1 {
         width: 50%;
         text-align: left;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .text-flex-history-2 {
         width: 50%;
         text-align: right;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .img-flex-history .img-history-1{
@@ -230,14 +237,18 @@
         position: absolute;
         left: 55px;
         bottom: 55px;
+        text-align: center;
     }
 
     .top-histoire{
         margin-bottom: 10%;
+        height: 500px;
+        margin-top: 0px;
     }
 
     .gold-text-history{
         margin-bottom: 13%;
+        font-size: 27px;
     }
     
     
@@ -257,16 +268,19 @@
     .text-flex-history-1 {
         width: 90%;
         text-align: center;
+        font-size: 27px;
     }
 
     .text-flex-history-2 {
         width: 90%;
         text-align: center;
+        font-size: 27px;
     }
 
     .img-flex-history {
         width: 80%;
         margin : auto;
+        margin-bottom: 100px;
     }
 
     .img-flex-history .img-history-1{
@@ -281,27 +295,36 @@
 }
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { /*telephone*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait){ /*telephone*/
     /* Styles pour cette Media Queries */
     .image-top-histoire img{
         width: 90%;
     }
 
+
+
     .top-histoire{
-        height: 40em;
+        height: 30em;
+        margin-top: 0px;
+    }
+
+    .gold-text-history{
+        font-size: 22px;
     }
     .histoire-txt-title {
         font-family: Montserrat, sans-serif;
         color: #E89910;
-        font-size: 55px !important;
+        font-size: 45px !important;
         position: absolute;
         left: 20px;
         bottom: 55px;
+        text-align: center;
     }
 
     .flex-history-1{
         flex-direction: column-reverse;
         max-height: none;
+        margin-bottom: 20px;
     }
 
     .flex-history-2{
@@ -311,7 +334,7 @@
 
     .text-flex-history-1 {
         font-family: Montserrat, sans-serif;
-        font-size: 29px;
+        font-size: 22px;
         width: 80%;
         margin: auto;
             margin-bottom: auto;
@@ -321,7 +344,7 @@
 
     .text-flex-history-2 {
         font-family: Montserrat, sans-serif;
-        font-size: 29px;
+        font-size: 22px;
         width: 80%;
         margin: auto;
             margin-bottom: auto;
@@ -334,8 +357,9 @@
     }
 
     .img-flex-history {
-        width: 80%;
+        width: 90%;
         margin : auto;
+        margin-bottom: 100px;
     }
 
     .img-flex-history .img-history-1{
