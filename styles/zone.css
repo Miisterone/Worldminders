@@ -1,7 +1,12 @@
-#main {
+body{
+    
     background: linear-gradient(90deg, rgba(10,93,176,1) 0%, rgba(3,45,89,1) 35%, rgba(0,23,48,1) 100%);
 }
 
+main{
+    max-width: 2560px;
+    margin:auto;
+}
 
 .navbar, .footer {
     background-color: black;
@@ -39,15 +44,18 @@
 }
 
 .top-map{
-    margin: 50px 5% 5%;
+    margin: 25px 5% 5%;
     width: 90%;
     height: 50em;
-    background: url("../images/logo_navbar.png") no-repeat;
+    background: url("../images/AniphissMonsters_logo.png") no-repeat;
     background-size: contain;
     position: relative;
     z-index: 9;
     background-position: center;
+    background-color: transparent;
 }
+
+
 
 
 .map-txt-title{
@@ -67,7 +75,7 @@
 }
 
 .img-map{
-    width: 80%;
+    width: 90%;
 }
 
 
@@ -81,7 +89,8 @@
     }
 
     .top-map {
-        height: 690px !important;
+        height: 500px !important;
+        margin-top: 25px;
     }
 
     .map-txt-title {
@@ -91,6 +100,10 @@
         position: absolute;
         left: 55px;
         bottom: 55px;
+    }
+
+    .img-map {
+        width: 90%;
     }
 }
 
@@ -104,15 +117,22 @@
         position: absolute;
         left: 55px;
         bottom: 55px;
+        text-align: center;
     }
 
     .top-map{
         margin-bottom: 10%;
+        height: 500px;
+        margin-top: 0px;
     }
 
    
     .image-top-map img{
         width: 80%;
+    }
+
+    .img-map {
+        width: 90%;
     }
 }
 
@@ -124,14 +144,27 @@
     }
 
     .top-map{
-        height: 40em;
+        height: 30em;
+        margin-top: 0px;
     }
     .map-txt-title {
         font-family: Montserrat, sans-serif;
         color: #E89910;
-        font-size: 55px !important;
+        font-size: 45px !important;
         position: absolute;
         left: 20px;
         bottom: 55px;
+        text-align: center;
+    }
+
+    .map-block {
+        text-align: center;
+        font-weight: 400;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    .img-map {
+        width: 90%;
     }
 }
