@@ -108,8 +108,8 @@
     font-family: Montserrat, sans-serif;
     font-size: 30px;
     text-decoration: underline;
-    top: -35rem;
-    right: -15rem;
+    top: -75%;
+    right: -25%;
 }
 
 .monster{
@@ -132,8 +132,8 @@
 
 .monster-btn{
     position: relative;
-    top: -15rem;
-    right: 40rem;
+    top: -35%;
+    right: 55%;
     color: #E89910;
     font-family: Montserrat, sans-serif;
     font-size: 30px;
