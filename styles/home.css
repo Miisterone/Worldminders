@@ -8,7 +8,7 @@
 }
 
 .navbar-link, .sidenav-link {
-    color: #E89910 ;
+    color: #E89910 !important;
     font-size: 30px;
     font-weight: bold;
     font-family: Montserrat, sans-serif;
@@ -78,7 +78,6 @@
     margin: 5% 5% 10%;
     height: 700px ;
     width: 50%;
-    background-color: white;
 }
 
 .histoire-txt{
@@ -115,7 +114,6 @@
     margin: 5% 5% 10%;
     height: 700px ;
     width: 50%;
-    background-color: white;
     position: relative;
     left: 40%;
 }
@@ -221,5 +219,35 @@
         height: 42px;
         width: 100px;
         font-size: medium;
+    }
+    .histoire-title{
+        font-size: 25px;
+        width: 158% !important;
+        top: -140%;
+        right: -10%;
+    }
+    .histoire-txt{
+        top: -32%;
+        right: -10%;
+        font-size: 12px;
+        width: 160%;
+    }
+    .img-env{
+        height: 50%;
+        width: 180%;
+        position: relative;
+        top: -33%;
+    }
+    .histoire-btn{
+        font-size: 12px;
+        top: -25%;
+        right: -70%;
+    }
+    .monster-title{
+        font-size: 25px;
+        right: 80%;
+        top: -115%;
+        width: 286px;
+        text-align: center;
     }
 }
