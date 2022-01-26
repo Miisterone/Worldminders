@@ -1,6 +1,5 @@
 let slidePosition = 0;
 
-
 const block1 = document.getElementById('block1')
 const block2 = document.getElementById('block2')
 const block3 = document.getElementById('block3')
@@ -754,5 +753,4 @@ function FourthChangePrev() {
     block5.style.backgroundColor = "yellow";
 
     slidePosition = 0;
-
 }
