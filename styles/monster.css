@@ -90,6 +90,13 @@ main {
     margin-top: 50px;
 }
 
+#searchbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
 .collapsible-trigger {
     height: 60px;
     display: flex;
@@ -127,8 +134,33 @@ main {
     justify-content: center;
 }
 
+
 #collapsible-img {
     height: 70px;
+    width: 70px;
+}
+
+#collapsible-margin{
+    width: 100px;
+}
+
+@media (max-width: 600px) {
+    #collapsible-img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 600px) {
+    #collapsible-img-container{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    #collapsible-margin{
+        width: 65px;
+    }
 }
 
 #monster-img {

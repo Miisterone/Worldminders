@@ -27,7 +27,7 @@ async function printcontent() {
         allcontent +=
             `<div style="width: 80vw; margin-top: 50px; border-radius: 60px; background-color: #977033;" id="parent-${array_region[i]}">
                 <div class="collapsible-trigger" onclick="func(${array_region[i]}, 'parent-${array_region[i]}')">
-                    <div style="width:100px;"></div>
+                    <div id="collapsible-margin"></div>
                     <div id="collapsible-title">
                             ${array_region[i]}
                     </div>
@@ -67,7 +67,7 @@ async function printcontent() {
         allcontent +=
             `<div style="width: 80vw; margin-top: 50px; border-radius: 60px; background-color: #977033;" id="parent-${array_element[i]}">
                 <div class="collapsible-trigger" onclick="func(${array_element[i]}, 'parent-${array_element[i]}')">
-                    <div style="width:100px;"></div>
+                    <div id="collapsible-margin"></div>
                     <div id="collapsible-title">
                             ${array_element[i]}
                     </div>
@@ -107,7 +107,7 @@ async function printcontent() {
         allcontent +=
             `<div style="width: 80vw; margin-top: 50px; border-radius: 60px; background-color: #977033;" id="parent-${array_physical_trait[i]}">
                 <div class="collapsible-trigger" onclick="func(${array_physical_trait[i]}, 'parent-${array_physical_trait[i]}')">
-                    <div style="width:100px;"></div>
+                    <div id="collapsible-margin"></div>
                     <div id="collapsible-title">
                             ${array_physical_trait[i]}
                     </div>
@@ -178,20 +178,33 @@ function displaycontent() {
 
 function SearchbarPlacement() {
     let searchbar = document.getElementById("searchbar")
-        //console.log(searchbar_position, window.scrollY)
-    if (searchbar_position <= window.scrollY) {
+    let search_dropdown = document.getElementById("searchbar dropdown")
+    if (searchbar_position <= window.scrollY-1) {
         searchbar.style.position = 'fixed'
         searchbar.style.top = '100px'
-        if (window.innerWidth >=600){
-            document.getElementById('description').style.marginTop = '50px'
-        } else {
-            document.getElementById('description').style.marginTop = '100px'
+        if(search_dropdown.style.display === 'flex'){
+            search_dropdown.style.position = 'fixed'
+            search_dropdown.style.top = '141px'
         }
-    
+        if (window.innerWidth >=600){
+            if(search_dropdown.style.display === 'flex'){
+            document.getElementById('description').style.marginTop = '80px'
+            } else {
+                document.getElementById('description').style.marginTop = '50px'
+            }
+        } else {
+            if(search_dropdown.style.display === 'flex'){
+                document.getElementById('description').style.marginTop = '80px'
+            } else{
+                document.getElementById('description').style.marginTop = '45px'
+            }
+        }
     } else {
         searchbar.style.position = 'relative'
         searchbar.style.top = 'auto'
         document.getElementById('description').style.marginTop = '0px'
+        search_dropdown.style.position = 'relative'
+        search_dropdown.style.top = 'auto'
     }
 }
 

@@ -4,6 +4,9 @@
 window.onresize = function(event) {
     let container_above = document.getElementById("top-container")
     searchbar_position = container_above.offsetTop + container_above.offsetHeight - 40;
+    if (innerWidth>600 && document.getElementById('searchbar dropdown').style.display !== 'none'){
+        document.getElementById('searchbar dropdown').style.display = 'none'
+    }
     SearchbarPlacement()
 }
 
@@ -26,6 +29,14 @@ document.getElementById("sort-Physical-trait").addEventListener('click', () => {
     displaycontent()
 })
 
+document.getElementById("responsive search button").addEventListener('click', () => {
+    let search_dropdwon = document.getElementById('searchbar dropdown')
+    if (search_dropdwon.style.display === 'flex'){
+        search_dropdwon.style.display = 'none'
+    } else {
+        search_dropdwon.style.display = 'flex'
+    } 
+})
 
 
 /*
