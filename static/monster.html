@@ -35,28 +35,37 @@
 
     <main>
         <div id="top-container" class="top-container">
+            <img id="top-img" src="../images/map.png" alt="Top-img">
             <h1 class="over-landscape-title">Les créatures d'Aniphis</h1>
-            <div class="over-landscape-description">Description breve</div>
+            <div class="over-landscape-description" style="color: antiquewhite;">Bienvenue dans le monde d'Aniphis</div>
         </div>
-        <div id="searchbar" class="grix xs2">
+        <div id="searchbar">
             <form>
-                <div class="form-field">
+                <div class="form-field hide-xs">
                     <div class="form-group rounded-1">
                         <span class="form-group-txt"><img src="../images/circle.png" alt="search-icon" style="width: 25px; font-size: 0.5rem;"></span>
                         <input type="text" id="search" class="form-control rounded-1" placeholder="Trouver un monstre" style="font-size: 1rem;" />
                     </div>
                 </div>
+                <div class="hide-sm hide-lg hide-md">
+                    <img id="responsive search button" src="../images/search-icon.png" alt="search-icon" style="width: 25px; font-size: 0.5rem;">
+                </div>
             </form>
-            <div>
+            <div id="sort-container">
                 <img src="../images/sort-icon.png" alt="sort-icon" style="width: 30px; font-size: 1rem; vertical-align: middle; margin-right: 4px;"> Trier par :
                 <div class="dropdown" id="sort-dropdown">
                     <button id="sort-btn" type="button" class="btn rounded-1 small white txt-orange dropdown-trigger" style="font-size: 1.3rem; margin-left: -4px;">Elément</button>
                     <div id="sort-type" class="dropdown-content white rounded-1" style="font-size: 1.3rem;">
                         <a class="dropdown-item txt-orange cursor-pointer" id="sort-Element">Elément</a>
                         <a class="dropdown-item txt-orange cursor-pointer" id="sort-Region">Région</a>
+                        <a class="dropdown-item txt-orange cursor-pointer" id="sort-Physical-trait">Trait physique</a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="searchbar dropdown" class="form-group" style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; width: 100%; background-color:white;">
+            <input type="text" id="search" class="form-control rounded-1" placeholder="Trouver un monstre" style="font-size: 1rem; width: 80%; " />
+            <img src="../images/search-icon.png" alt="search-icon" style="width: 25px; font-size: 0.5rem; margin: 0px 5px;">
         </div>
         <div id="description" style="font-size: 1.2rem; color: orange; width: 70%; padding-top: 80px; text-align: center;">Lorem ipsum dolor sit amet. Ut debitis velit nam suscipit sint et recusandae vitae et labore quisquam et similique voluptate eum saepe suscipit. Ut cumque fugiat et velit molestiae qui nemo delectus a ducimus tempora aut doloremque itaque. Ea
             laudantium fuga et omnis quia est optio voluptate ut voluptatem voluptas et molestiae molestiae et repudiandae excepturi. Est minima explicabo est ratione repellendus in suscipit illum id sunt porro. Sed illo delectus eum maxime voluptatum
