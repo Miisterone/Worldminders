@@ -6,7 +6,6 @@
     padding-bottom: 400px;
     max-width: 2560px;
     margin: auto;
-
 }
 
 .blank {
@@ -325,7 +324,7 @@ button {
 }
 
 #text {
-    padding: 2.5rem;
+    padding: -1.5rem;
     margin-top: 10px;
 }
 
@@ -336,6 +335,7 @@ button {
     display: flex;
     padding: 0;
 }
+
 .line {
     fill: none;
     stroke: black;
@@ -343,36 +343,79 @@ button {
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .line1 {
     stroke-dasharray: 60 207;
     stroke-width: 6;
 }
+
 .line2 {
     stroke-dasharray: 60 60;
     stroke-width: 6;
 }
+
 .line3 {
     stroke-dasharray: 60 207;
     stroke-width: 6;
 }
+
 .opened .line1 {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
 }
+
 .opened .line2 {
     stroke-dasharray: 1 60;
     stroke-dashoffset: -30;
     stroke-width: 6;
 }
+
 .opened .line3 {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
 }
 
+.toCenter {
+    display: none;
+}
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+@media only screen and (min-device-width: 240px) and (max-device-width: 490px) {
+
+    /*.toCenter {*/
+    /*    position: relative;*/
+    /*    display: block;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
+
+    /*.svg {*/
+    /*    margin-top: -25px;*/
+    /*    margin-left: -45px;*/
+    /*}*/
+
+    /*.btn2 {*/
+    /*    position: relative;*/
+    /*    margin-left: 0;*/
+    /*    margin-right: 0;*/
+    /*}*/
+
+    /*.filter-color {*/
+    /*    position: relative;*/
+    /*    filter: invert(68%) sepia(22%) saturate(2599%) hue-rotate(356deg) brightness(95%) contrast(92%);*/
+    /*}*/
+
+    /*.filter-color {*/
+    /*    float: left;*/
+    /*    top: 0;*/
+    /*}*/
+
+    .btn-navbar-download {
+        margin-left: -10px;
+        font-size: 24px;
+    }
 
     .sidenav {
         width: 100%;
@@ -427,7 +470,6 @@ button {
         grid-row: span 2;
     }
 
-
     #Tittle {
         left: 32px;
         height: 100px;
@@ -439,6 +481,7 @@ button {
         position: relative;
         font-size: 2rem;
         margin-right: 0;
+        margin-top: 4rem;
     }
 
     #container {
@@ -492,7 +535,7 @@ button {
     }
 
     #Alpha {
-        margin-top: -15rem;
+        margin-top: -32rem;
     }
 
     .circle {
@@ -504,14 +547,7 @@ button {
     }
 
     #logonav {
-        display: none;
-    }
-
-    .navbar-logo[link=false] {
-        pointer-events: none;
-        cursor: default;
-        text-decoration: none;
-        color: black;
+        display: block;
     }
 
     .container {
@@ -555,7 +591,39 @@ button {
     }
 }
 
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+    #Alpha {
+        margin-top: -3rem;
+    }
+
+    #PL {
+        margin-top: 30rem;
+    }
+}
+
 @media only screen and (min-width: 490px) and (max-width: 750px) {
+
+    /*.toCenter {*/
+    /*    position: relative;*/
+    /*    display: block;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
+
+    /*.svg {*/
+    /*    margin-top: -25px;*/
+    /*}*/
+
+    /*.btn2 {*/
+    /*    position: relative;*/
+    /*    margin-left: auto;*/
+    /*    margin-right: auto;*/
+    /*}*/
+
+    /*.filter-color {*/
+    /*    position: relative;*/
+    /*    filter: invert(68%) sepia(22%) saturate(2599%) hue-rotate(356deg) brightness(95%) contrast(92%);*/
+    /*}*/
 
     .menu {
         display: block;
@@ -579,6 +647,28 @@ button {
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1080px) and (orientation: landscape) {
+
+    /*.toCenter {*/
+    /*    position: relative;*/
+    /*    display: block;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
+
+    /*.svg {*/
+    /*    margin-top: -25px;*/
+    /*}*/
+
+    /*.btn2 {*/
+    /*    position: relative;*/
+    /*    margin-left: auto;*/
+    /*    margin-right: auto;*/
+    /*}*/
+
+    /*.filter-color {*/
+    /*    position: relative;*/
+    /*    filter: invert(68%) sepia(22%) saturate(2599%) hue-rotate(356deg) brightness(95%) contrast(92%);*/
+    /*}*/
 
     .menu {
         display: block;
@@ -639,11 +729,34 @@ button {
     }
 
     #Alpha {
-        margin-top: 10rem;
+        margin-top: -5rem;
     }
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1080px) and (orientation: portrait) {
+
+    /*.toCenter {*/
+    /*    display: block;*/
+    /*    position: relative;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
+
+    /*.svg {*/
+    /*    margin-top: -25px;*/
+    /*}*/
+
+    /*.btn2 {*/
+    /*    position: relative;*/
+    /*    margin-left: auto;*/
+    /*    margin-right: auto;*/
+    /*}*/
+
+    /*.filter-color {*/
+    /*    position: relative;*/
+    /*    filter: invert(68%) sepia(22%) saturate(2599%) hue-rotate(356deg) brightness(95%) contrast(92%);*/
+    /*}*/
+
 
     .menu {
         display: block;
@@ -710,3 +823,32 @@ button {
         height: 21rem;
     }
 }
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
