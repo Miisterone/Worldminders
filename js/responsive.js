@@ -3,7 +3,6 @@ const toActive1 = document.getElementById('main-sidenav')
 let clicked = false
 
 function responsive () {
-    console.log('click')
     toActive1.classList.toggle('active')
     body.style.overflow = "hidden"
 
@@ -14,5 +13,4 @@ function responsive () {
         body.style.overflow = "hidden"
         clicked = true;
     }
-
 }
