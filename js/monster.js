@@ -1,4 +1,4 @@
-var url = `http://localhost:8081/data` //lien api
+var url = `https://localhost:7244/Monster` //lien api
 var searchbar_position = document.getElementById("searchbar").offsetTop - 100
 var sort_content = document.getElementById("main-content")
 const array_element = ["Neutre", "Ardent", "Électrique", "Aquatique", "Végétal", "Minéral", "Céleste", "Psychique", "Chaotique", "Toxique", "Éthéré"]
