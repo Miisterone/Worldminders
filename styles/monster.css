@@ -90,7 +90,7 @@ main {
     margin-top: 50px;
 }
 
-#searchbar{
+#searchbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -134,31 +134,30 @@ main {
     justify-content: center;
 }
 
-
 #collapsible-img {
     height: 70px;
-    width: 70px;
 }
 
-#collapsible-margin{
+#collapsible-margin {
     width: 100px;
 }
 
 @media (max-width: 600px) {
-    #collapsible-img{
+    #collapsible-img {
         width: 50px;
         height: 50px;
     }
 }
+
 @media (max-width: 600px) {
-    #collapsible-img-container{
+    #collapsible-img-container {
         width: 70px;
         height: 70px;
     }
 }
 
 @media (max-width: 600px) {
-    #collapsible-margin{
+    #collapsible-margin {
         width: 65px;
     }
 }
