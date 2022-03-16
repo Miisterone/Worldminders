@@ -3,7 +3,7 @@
     background: linear-gradient(90deg, rgba(10, 93, 176, 1) 0%, rgba(3, 45, 89, 1) 35%, rgba(0, 23, 48, 1) 100%);
     min-height: 100vh;
     inset: 0;
-    padding-bottom: 400px;
+    padding-bottom: 200px;
     max-width: 2560px;
     margin: auto;
 }
@@ -177,7 +177,7 @@
     color: #E89910;
     position: relative;
     text-align: center;
-    margin-top: 40rem;
+    margin-top: 25rem;
 }
 
 #DescriptionAlpha {
@@ -345,7 +345,7 @@ button {
     display: none;
 }
 
-@media only screen and (min-device-width: 240px) and (max-device-width: 490px) {
+@media only screen and (min-device-width: 240px) and (max-device-width: 765px) {
 
     .to-hide {
         display: block;
@@ -416,7 +416,7 @@ button {
     }
 
     #Tittle {
-        left: 32px;
+        left: 20px;
         height: 100px;
         text-anchor: middle;
         font-size: 2rem;
@@ -426,7 +426,7 @@ button {
         position: relative;
         font-size: 2rem;
         margin-right: 0;
-        margin-top: 4rem;
+        margin-top: 12rem;
     }
 
     #container {
@@ -497,7 +497,6 @@ button {
 }
 
 @media only screen and (width: 2560px) {
-
     .d-grid {
         transform: translateX(47%);
     }
@@ -515,33 +514,63 @@ button {
 
     #PL {
         margin-top: 30rem;
+        font-size: 1.52rem;
     }
 }
 
-@media only screen and (min-width: 490px) and (max-width: 750px) {
+@media only screen and (min-width: 959px) and (max-width: 1400px) {
 
-    .to-display {
+    #Alpha {
+        margin-top: -10rem;
+    }
+
+    #carousel__button--next {
         display: none;
     }
 
-    .to-hide {
-        display: block;
+    #carousel__button--prev {
+        display: none;
+    }
+
+    .carousel {
+        display: none;
     }
 
     .d-grid {
-        transform: translateX(0);
+        margin-top: 5rem;
+        width: 80%;
+        height: 36rem;
+        place-items: center;
+        justify-content: center;
+        align-items: center;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
-}
 
-@media only screen and (min-width: 1080px) and (max-width: 1350px) {
-
-    .d-grid {
-        transform: translateX(0);
+    #item1 {
+        padding: 50px 0 50px 0;
+        height: max-content;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1 / 3;
     }
-}
 
-@media only screen and (min-width: 950px) and (max-width: 1080px) {
+    #item2 {
+        height: max-content;
+        width: 100%;
+        grid-column: 1;
+        grid-row: span 2;
+    }
 
+    #item3 {
+        height: max-content;
+        width: 100%;
+        grid-column: 1;
+        grid-row: span 2;
+    }
+    .circle {
+        display: none;
+    }
     .to-display {
         display: block;
     }
@@ -551,8 +580,7 @@ button {
     }
 }
 
-@media only screen and (min-width: 750px) and (max-width: 955px) and (orientation: landscape) {
-
+@media only screen and (min-width: 480px) and (max-width: 958px) and (orientation: landscape) {
     .to-display {
         display: none;
     }
@@ -624,7 +652,7 @@ button {
     }
 }
 
-@media only screen and (min-width: 750px) and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (min-width: 480px) and (max-width: 1080px) and (orientation: portrait) {
 
     .to-display {
         display: none;
@@ -696,6 +724,6 @@ button {
     }
 
     #Lorem {
-        height: 21rem;
+        height: max-content;
     }
 }
