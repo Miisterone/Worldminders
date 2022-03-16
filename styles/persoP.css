@@ -387,8 +387,6 @@ button {
         width: 80%;
         height: 48rem;
         place-items: center;
-        justify-content: center;
-        align-items: center;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
@@ -491,7 +489,7 @@ button {
         padding-bottom: 0;
     }
 
-    #logonav {
+    #flogonav {
         display: block;
     }
 }
@@ -552,7 +550,7 @@ button {
         height: max-content;
         width: 100%;
         grid-column: 1;
-        grid-row: 1 / 3;
+        grid-row: 2 / 3;
     }
 
     #item2 {
@@ -617,7 +615,7 @@ button {
         height: max-content;
         width: 100%;
         grid-column: 1;
-        grid-row: 1 / 3;
+        grid-row: 2 / 3;
     }
 
     #item2 {
