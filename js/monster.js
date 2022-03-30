@@ -36,28 +36,27 @@ async function printcontent() {
                     </div>
                 </div>
                 <div id="${array_region[i]}" style="display:none; margin-top: 20px; padding: 15px; justify-content: center; flex-wrap: wrap;">`
-            /*
+
                 for (let value in data) {
-                    if (data[value].region == array_region[i]) {
-                        allcontent += `<<div style="display:flex; flex-direction:column; justify-content:center; align-items:center; margin: 25px 25px;" ><img id="monster-img" src="${data[value].image}"> 
-                <span id="monster-name">${data[value].nom}</span></div>``
+                    if (data[value].location == array_region[i]) {
+                        allcontent += `<div style="display:flex; flex-direction:column; justify-content:center; align-items:center; margin: 25px 25px;" ><img id="monster-img" src="${data[value].image}"> 
+                <span id="monster-name">${data[value].name}</span></div>`
                     }
                 }
-*/
-        allcontent += `<div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-        <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-        <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-        <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-        <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-        <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-        <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-        <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-        <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-        <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>`
+
+        // allcontent += `<div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        // <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        // <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        // <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        // <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        // <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        // <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        // <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        // <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        // <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>`
         allcontent += `</div>
             </div>
             `
-
     }
     allcontent += `</div>`
     allcontent += `<div id="Element">`
@@ -79,19 +78,19 @@ async function printcontent() {
         for (let value in data) {
             if (data[value].type == array_element[i]) {
                 allcontent += `<div style="display:flex; flex-direction:column; justify-content:center; align-items:center; margin: 25px 25px;" ><img id="monster-img" src="${data[value].image}"> 
-                <span id="monster-name">${data[value].nom}</span></div>`
+                <span id="monster-name">${data[value].name}</span></div>`
             }
         }
 
-        allcontent += `<div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>`
+        // allcontent += `<div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>`
 
         allcontent += `</div>
             </div>
@@ -114,21 +113,21 @@ async function printcontent() {
                     </div>
                 </div>
                 <div id="${array_physical_trait[i]}"style="display:none; margin-top: 20px; padding: 25px; justify-content: center; flex-wrap: wrap;">`
-            /*
+            
                     for (let value in data) {
                         if (data[value].physcical_trait == array_physical_trait[i]) {
                             allcontent += `<div style="display:flex; flex-direction:column; justify-content:center; align-items:center; margin: 25px 25px;" ><img id="monster-img" src="${data[value].image}"> 
-                            <span id="monster-name">${data[value].nom}</span></div>``
+                            <span id="monster-name">${data[value].name}</span></div>`
                         }
                     }
-            */
-        allcontent += `<div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
-                    <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>`
+            
+        // allcontent += `<div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>
+        //             <div style="width: 200px; height: 200px; background: black; margin: 25px 25px"></div>`
 
         allcontent += `</div>
             </div>
