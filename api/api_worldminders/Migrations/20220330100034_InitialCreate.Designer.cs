@@ -10,7 +10,7 @@ using api_worldminders.Data;
 namespace api_worldminders.Migrations
 {
     [DbContext(typeof(MonsterContext))]
-    [Migration("20220302093926_InitialCreate")]
+    [Migration("20220330100034_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,10 +24,19 @@ namespace api_worldminders.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Capacity")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Character")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Image")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Location")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")

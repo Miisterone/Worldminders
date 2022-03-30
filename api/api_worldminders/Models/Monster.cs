@@ -13,5 +13,12 @@ public class Monster
     public string Type { get; set; }
     
     public string? Description { get; set; }
+
     public string? Image { get; set; }
+
+    public string? Capacity { get; set; }
+
+    public string? Location { get; set; }
+
+    public string? Character { get; set; }
 }

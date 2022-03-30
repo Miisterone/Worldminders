@@ -17,7 +17,10 @@ namespace api_worldminders.Migrations
                     Name = table.Column<string>(type: "TEXT", nullable: false),
                     Type = table.Column<string>(type: "TEXT", nullable: false),
                     Description = table.Column<string>(type: "TEXT", nullable: true),
-                    Image = table.Column<string>(type: "TEXT", nullable: true)
+                    Image = table.Column<string>(type: "TEXT", nullable: true),
+                    Capacity = table.Column<string>(type: "TEXT", nullable: true),
+                    Location = table.Column<string>(type: "TEXT", nullable: true),
+                    Character = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {

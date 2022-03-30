@@ -13,7 +13,7 @@ builder.Services.AddSqlite<MonsterContext>("Data Source=DataBase.db");
 
 builder.Services.AddScoped<MonsterService>();
 
-builder.Services.AddCors();
+builder.Services.AddCors(options => {});
 
 var app = builder.Build();
 
