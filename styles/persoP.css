@@ -1,11 +1,13 @@
 #main {
-    background: rgb(10, 93, 176);
-    background: linear-gradient(90deg, rgba(10, 93, 176, 1) 0%, rgba(3, 45, 89, 1) 35%, rgba(0, 23, 48, 1) 100%);
     min-height: 100vh;
     inset: 0;
     padding-bottom: 200px;
     max-width: 2560px;
     margin: auto;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(10,93,176,1) 0%, rgba(3,45,89,1) 35%, rgba(0,23,48,1) 100%);
 }
 
 .blank {
@@ -61,6 +63,8 @@
 }
 
 .d-grid {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -316,7 +320,7 @@ button {
     aspect-ratio: 2;
     margin-top: calc(6rem + 2px);
     padding: 0;
-    background-color: hsl(0 0% 100% / 0.1);
+    background-color: hsla(0, 0%, 0%, 0.53);
     text-align: center;
 }
 
@@ -383,6 +387,8 @@ button {
     }
 
     .d-grid {
+        margin-left: 0;
+        margin-right: 0;
         margin-top: 5rem;
         width: 80%;
         height: 48rem;
@@ -535,6 +541,8 @@ button {
     }
 
     .d-grid {
+        margin-left: 0;
+        margin-right: 0;
         margin-top: 5rem;
         width: 80%;
         height: 36rem;
@@ -600,6 +608,8 @@ button {
     }
 
     .d-grid {
+        margin-left: 0;
+        margin-right: 0;
         margin-top: 5rem;
         width: 80%;
         height: 36rem;
@@ -673,6 +683,8 @@ button {
     }
 
     .d-grid {
+        margin-left: 0;
+        margin-right: 0;
         margin-top: 5rem;
         width: 80%;
         height: 36rem;

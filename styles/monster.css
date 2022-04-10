@@ -16,6 +16,16 @@ body {
     padding: 0 1rem !important;
 }
 
+.sidenav {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 2;
+    margin-top: calc(6rem + 2px);
+    padding: 0;
+    background-color: hsla(0, 0%, 0%, 0.53);
+    text-align: center;
+}
+
 .navbar {
     height: 100px !important;
 }
@@ -113,6 +123,24 @@ main {
     font-size: 2rem;
 }
 
+.to-hide {
+    display: none;
+}
+
+.to-display {
+    display: block;
+}
+
+@media screen and (min-width: 900px) {
+    .to-hide {
+        display: none !important;
+    }
+    
+    .to-display {
+        display: block !important;
+    }
+}
+
 @media screen and (max-width: 900px) {
     #collapsible-title {
         font-size: 1.8rem;
@@ -141,6 +169,18 @@ main {
 
 #collapsible-margin {
     width: 100px;
+}
+
+.to-hide {
+    display: block;
+}
+
+.to-display {
+    display: none;
+}
+
+.sidenav .sidenav-header .sidenav-logo {
+    height: 8rem;
 }
 
 @media (max-width: 600px) {
@@ -176,4 +216,16 @@ main {
     padding-top: 5px;
     text-align: center;
     max-width: 150px;
+}
+
+.to-hide {
+    display: block;
+}
+
+.to-display {
+    display: none;
+}
+
+.sidenav .sidenav-header .sidenav-logo {
+    height: 8rem;
 }
