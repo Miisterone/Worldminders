@@ -11,14 +11,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../images/Animonster_logo1.0.png" />
-</head>
+    <script src="../js/responsive.js" defer></script>
 
 <body class="layout">
     <header>
         <div class="navbar-fixed">
             <nav class="navbar shadow-1">
-                <a href="home.html" class="navbar-logo">
-                    <img src="../images/logo_navbar.png" alt="Animonsterlogo"/>
+                <a href="#" class="navbar-logo to-hide">
+                    <img src="../images/logo_navbar.png" alt="Animonsterlogo" id="logonav" onclick="responsive()"/>
+                </a>
+    
+                <a href="home.html" class="navbar-logo to-display">
+                    <img src="../images/logo_navbar.png" alt="Animonsterlogo">
                 </a>
                 <div class="navbar-menu left">
                     <a class="navbar-link hide-sm-down" href="histoire.html">Histoire</a>
@@ -33,15 +37,18 @@
         </div>
     </header>
 
-    <div class="sidenav white shadow-1" id="main-sidenav" data-ax="sidenav">
+    <div class="sidenav shadow-1" id="main-sidenav" data-ax="sidenav">
         <div class="sidenav-header">
-            <img src="../images/Animonster_logo1.0.png" alt="" class="sidenav-logo" />
+            <a href="home.html">
+                <img src="../images/logo_navbar.png" alt="" class="sidenav-logo"/>
+            </a>
         </div>
-
-        <a href="histoire.html" class="sidenav-link">Histoire</a>
-        <a href="persoP.html" class="sidenav-link">Personnages</a>
-        <a href="monster.html" class="sidenav-link">Monstres</a>
-        <a href="zone.html" class="sidenav-link">Carte</a>
+        <div id="text">
+            <a href="histoire.html" class="sidenav-link">Histoire</a>
+            <a href="persoP.html" class="sidenav-link">Personnages</a>
+            <a href="monster.html" class="sidenav-link">Monstres</a>        
+            <a href="zone.html" class="sidenav-link">Zone</a>
+        </div>
     </div>
 
     <main id="main">
